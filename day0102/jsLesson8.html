@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>あなたの運勢</title>
+		<title>あなたのbmi</title>
 	</head>
 	<body>
-		体重:<input type="number" id="weight">
-		身長:<input type="number" id="height">
+		体重(kg):<input type="number" id="weight"><br>
+		身長(cm):<input type="number" id="height"><br>
 		<button onclick="calc()">計算</button>
 		<div id="result"></div>
 <script>
@@ -16,10 +16,9 @@
 		const calc=()=>{
 				let w=parseInt(weight.value);
 				let h=(parseInt(height.value))/100;
-				let bmi=w/h/h;
+				let bmi=w/(h*h);
 				bmi=(Math.floor(bmi*10))/10;
-				str='あなたのbmiは'+bmi+'です';
-				result.textContent=str;
+				result.textContent='あなたのbmiは'+bmi+'です';
 		};
 </script>
 	</body>
