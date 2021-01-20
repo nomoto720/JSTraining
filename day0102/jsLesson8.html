@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>あなたの運勢</title>
+	</head>
+	<body>
+		体重:<input type="number" id="weight">
+		身長:<input type="number" id="height">
+		<button onclick="calc()">計算</button>
+		<div id="result"></div>
+<script>
+		const weight=document.getElementById('weight');
+		const height=document.getElementById('height');
+		const result=document.getElementById('result');
+		const calc=()=>{
+				let w=parseInt(weight.value);
+				let h=(parseInt(height.value))/100;
+				let bmi=w/h/h;
+				bmi=(Math.floor(bmi*10))/10;
+				str='あなたのbmiは'+bmi+'です';
+				result.textContent=str;
+		};
+</script>
+	</body>
+</html>

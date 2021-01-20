@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>あなたの運勢</title>
+	</head>
+	<body>
+		<button onclick="fortune()">占う</button>
+		<div id="result"></div>
+<script>
+		const fortunes=['大吉','中吉','小吉','凶'];
+		const result=document.getElementById('result');
+		const fortune=()=>{
+			let n=Math.floor(Math.random()*4);
+				result.textContent='今日のあなたの運勢は'+fortunes[n]+'です!';
+		};
+</script>
+	</body>
+</html>
