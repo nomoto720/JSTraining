@@ -99,8 +99,32 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="";
-		System.out.println("Q7.");
+		ans="const func2=x=>{console.log(x);};";
+		System.out.println("Q8.Q7の引数を略して表示せよ);
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="const func2=x=>console.log(x);";
+		System.out.println("Q9.Q8のメソッドも略して表示せよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="let num=document.getElementById(\"isNum\")";
+		System.out.println("Q10.inputの名前inNumからきた文字列をインスタンスnumに代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -112,7 +136,7 @@ public class Test{
 		}
 		System.out.println();
 		ans="";
-		System.out.println("Q7.");
+		System.out.println("Q11.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -124,7 +148,31 @@ public class Test{
 		}
 		System.out.println();
 		ans="";
-		System.out.println("Q7.");
+		System.out.println("Q12.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q13.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q14.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
