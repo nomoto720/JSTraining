@@ -87,8 +87,44 @@ public class Test{
 			}
 		}
 		System.out.println();
+		ans="const func2=(x)=>{console.log(x);};";
+		System.out.println("Q7.ラムダ式でコンソールに引数を表示するfunc2メソッドを作成せよ。");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
 		ans="";
-		System.out.println("Q2.");
+		System.out.println("Q7.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q7.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q7.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
