@@ -100,7 +100,7 @@ public class Test{
 		}
 		System.out.println();
 		ans="const func2=x=>{console.log(x);};";
-		System.out.println("Q8.Q7の引数を略して表示せよ);
+		System.out.println("Q8.Q7の引数を略して表示せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
