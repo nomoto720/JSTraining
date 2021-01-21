@@ -5,7 +5,7 @@
 		<title></title>
 	</head>
 	<body>
-		<p id="word" >Hello</p>
+		<p id="word" ><br>ー&emsp;ー<br>_</p>
 		<script>
 			console.log(window);
 			//window.alert('hello JS!');
@@ -14,38 +14,38 @@
 			const ele=document.getElementById('word');
 			let modify=()=>{
 					ele.style.backgroundColor='#f0e68c';
-					ele.style.width='250px';
-					ele.style.height='180px';
+					ele.style.width='200px';
+					ele.style.height='190px';
 					ele.style.opacity='1';
-					ele.style.lineHeight='180px';
 					ele.style.fontSize='40px';
+					ele.style.padding='auto';
 			}
 			let modify3=()=>{
 					ele.style.opacity='0.5';
 			}
 			let modify4=()=>{
 					ele.style.opacity='1';
-					ele.style.width='200px';
-					ele.style.height='150px';
+					ele.style.width='180px';
+					ele.style.height='170px';
 					ele.style.backgroundColor='#fffacd';
 					ele.style.fontSize='34px';
-					ele.style.lineHeight='150px';
+					ele.style.padding='auto';
 			}
 			ele.addEventListener('click',modify);
 			ele.addEventListener('mouseover',modify3);
 			ele.addEventListener('mouseout',modify4);
 			console.dir(ele);
 			ele.style.color='#008b8b';
-			ele.style.width='200px';
-			ele.style.height='150px';
+			ele.style.width='180px';
+			ele.style.height='170px';
 			ele.style.textAlign='center';
-			ele.style.lineHeight='150px';
+			ele.style.padding='auto';
 			ele.style.backgroundColor='#fffacd';
 			ele.style.border='solid';
 			ele.style.fontWeight='bolder';
 			ele.style.fontSize='34px';
 			ele.style.margin='34px auto';
-			ele.style.borderRadius='20px';
+			ele.style.borderRadius='100px';
 
 			function sayHello(){
 							console.log('Hello');
