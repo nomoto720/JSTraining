@@ -135,8 +135,68 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="";
-		System.out.println("Q11.");
+		ans="strs.push('hello');";
+		System.out.println("Q11.strs配列の末尾に文字列helloを追加せよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="let strs=[]";
+		System.out.println("Q12.空の配列strsを作成せよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="let obj1={name:\"Tom\",age:29};";
+		System.out.println("Q13.オブジェクトobj1を作りプロパティに名前Tomと年齢29を代入せよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="obj1.gender='man';";
+		System.out.println("Q14.obj1にgenderのプロパティを追加しmanを代入せよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="console.log(obj1.gender);";
+		System.out.println("Q14.obj1のgenderプロパティの中身をコンソールに表示せよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="window.alert('Hello');";
+		System.out.println("Q15.暗黙オブジェクトのwindowのアラートでHelloと表示せよ");	
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -148,7 +208,7 @@ public class Test{
 		}
 		System.out.println();
 		ans="";
-		System.out.println("Q12.");
+		System.out.println("Q16.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -160,7 +220,7 @@ public class Test{
 		}
 		System.out.println();
 		ans="";
-		System.out.println("Q13.");
+		System.out.println("Q17.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -172,7 +232,19 @@ public class Test{
 		}
 		System.out.println();
 		ans="";
-		System.out.println("Q14.");
+		System.out.println("Q18.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q19.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){

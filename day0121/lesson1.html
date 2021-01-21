@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p id="word" >Hello</p>
+		<script>
+			console.log(window);
+			//window.alert('hello JS!');
+			console.log(document);
+			//document.getElementById('word').textContent="World";	
+			const ele=document.getElementById('word');
+			let modify=()=>{
+					ele.style.backgroundColor='#f0e68c';
+					ele.style.width='250px';
+					ele.style.height='180px';
+					ele.style.opacity='1';
+					ele.style.lineHeight='180px';
+					ele.style.fontSize='40px';
+			}
+			let modify3=()=>{
+					ele.style.opacity='0.5';
+			}
+			let modify4=()=>{
+					ele.style.opacity='1';
+					ele.style.width='200px';
+					ele.style.height='150px';
+					ele.style.backgroundColor='#fffacd';
+					ele.style.fontSize='34px';
+					ele.style.lineHeight='150px';
+			}
+			ele.addEventListener('click',modify);
+			ele.addEventListener('mouseover',modify3);
+			ele.addEventListener('mouseout',modify4);
+			console.dir(ele);
+			ele.style.color='#008b8b';
+			ele.style.width='200px';
+			ele.style.height='150px';
+			ele.style.textAlign='center';
+			ele.style.lineHeight='150px';
+			ele.style.backgroundColor='#fffacd';
+			ele.style.border='solid';
+			ele.style.fontWeight='bolder';
+			ele.style.fontSize='34px';
+			ele.style.margin='34px auto';
+			ele.style.borderRadius='20px';
+
+			function sayHello(){
+							console.log('Hello');
+			}
+			sayHello();
+
+			function calc(x,y){
+				console.log(x+y);
+			}
+			calc(10,20);
+			calc('Hello','World');
+			function calc2(x,y){
+				return x*y;
+			}
+			let n=calc2(10,20);
+			console.log(n);
+			let func=calc;
+			func(1,2);
+
+			let calc3=(x,y)=>{console.log(x%y);};
+			calc3(10,3);
+			let calc4=()=>{console.log('Hello');};
+			calc4();
+		</script>
+	</body>
+</html>
