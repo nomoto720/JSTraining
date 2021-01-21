@@ -207,8 +207,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="";
-		System.out.println("Q16.");
+		ans="window.onload=function(){};";
+		System.out.println("Q16.文章が読み込まれてからfunctionメソッドを実行する処理をかけ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -219,8 +219,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="";
-		System.out.println("Q17.");
+		ans="'3'===3";
+		System.out.println("Q17.文字列の3とint型の３を型も含めて同じかどうか判断する条件文");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
