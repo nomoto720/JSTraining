@@ -279,8 +279,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="";
-		System.out.println("Q20.");
+		ans="p.textContent=null;";
+		System.out.println("Q20.p要素の子要素をすべて削除せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -292,7 +292,79 @@ public class Test{
 		}
 		System.out.println();
 		ans="";
-		System.out.println("Q19.");
+		System.out.println("Q21.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q22.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q23.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q24.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q25.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q26.");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="";
+		System.out.println("Q27.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
