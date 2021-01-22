@@ -231,8 +231,56 @@ public class Test{
 			}
 		}
 		System.out.println();
+		ans="document.createElement('li')";
+		System.out.println("Q18.jsでliタグを作成せよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="ls.textContent='Item';";
+		System.out.println("Q19.Q18のliタグに文字列Itemを代入せよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="ol.appendChild(li);";
+		System.out.println("Q19.Q18で作ったliタグをolタグの子要素にせよ");
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
+		ans="document.querySelectorAll('a');";
+		System.out.println("Q19."タグのaのドムを全て取得せよ);
+		while(true){
+			input=sc.nextLine();
+			if(ans.equals(input)){
+				System.out.println("正解です");
+				break;
+			}else{
+				System.out.println("違います");
+			}
+		}
+		System.out.println();
 		ans="";
-		System.out.println("Q18.");
+		System.out.println("Q20.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
