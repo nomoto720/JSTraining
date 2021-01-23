@@ -10,11 +10,16 @@
 		<button class="select">青を持つ</button>
 		<button onclick="writePen()">書く</button>
 		<p id="info"></p>
+		<p id="penStatus"></p>
 <script>
+	const penStatus=document.getElementById('penStatus');
+	const bts=document.querySelectorAll('.select');
+	const info=document.getElementById('info');
 	class ColorPen{
-		constructor(color,length){
+		constructor(color,length,penColor){
 				this.color=color;
 				this.length=length;
+				this.penColor=penColor;
 		}
 		write(){
 				let msg='';
@@ -27,19 +32,24 @@
 				return msg;
 		}
 	}
-	const bts=document.querySelectorAll('.select');
-		let pens=[
-				new ColorPen('赤',10),
-				new ColorPen('緑',10),
-				new ColorPen('青',10)
+	let pens=[
+				new ColorPen('赤',10,'red'),
+				new ColorPen('緑',10,'green'),
+				new ColorPen('青',10,'blue')
 			];
 		let pen=null;
-	const info=document.getElementById('info');
 		for(let i=0;i<bts.length;i++){
 				bts[i].addEventListener('click',()=>{
 						pen=pens[i];
 						info.textContent=pen.color+'を持った';
+						showPen();	
 				});
+		}
+		function showPen(){
+						penStatus.textContent=pen.length+'cm';
+						penStatus.style.width=pen.length+'cm';
+						penStatus.style.backgroundColor=pen.penColor;
+						penStatus.style.color='yellow';
 		}
 	const writePen=()=>{
 				let msg='';
@@ -47,6 +57,7 @@
 					msg='ペンを持ってください！';
 				}else{
 					msg=pen.write();
+					showPen();
 				}
 				info.textContent=msg;
 		};
