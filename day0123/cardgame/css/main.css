@@ -13,3 +13,27 @@ td.card{
 td.card.back{
 	background-image:url(../images/z01.gif) !important;
 }
+#time{
+	background-color:#fffacd;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:green;
+	border-radius: 10px 20px 30px 40px;
+	font-weight: bold;
+	font-size:20px;
+}
+.fadeout{
+	animation:fadeOut 1.5s ease-in-out;
+	animation-fill-mode:forwards;
+}
+@keyframes fadeOut{
+	from{
+		opacity:1;
+	}
+	to{
+		opacity:0;
+		opacity:none;
+	}
+}

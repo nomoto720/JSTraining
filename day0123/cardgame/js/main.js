@@ -4,7 +4,7 @@ window.onload=function(){
 		constructor(suit,num){
 			this.suit=suit;
 			this.num=num;
-			this.front=`${this.suit}${this.num<10? '0':''}${this.num}.gif`;
+			this.front=`${this.suit}${this.num<10?'0':''}${this.num}.gif`;
 		}
 	}
 	const cards=[];
@@ -24,8 +24,9 @@ window.onload=function(){
 			let tempCard=cards[i*13+j];
 			td.classList.add('card','back');
 			td.onclick=flip;
-			td.num=tempCard.num;
 			td.style.backgroundImage=`url(images/${tempCard.front})`;
+			td.num=tempCard.num;
+			console.dir(td);
 			//td.textContent=`${tempCard.suit}:${tempCard.num}`;
 			tr.appendChild(td);
 		}
@@ -41,12 +42,13 @@ window.onload=function(){
 		}
 	}
 	let firstCard=null;
+	let rest=52;
 	let flipTimerId=NaN;
-	
+	let timerId=NaN;
 	function flip(e){
 		let td=e.target;
 		//td.classList.toggle('back');
-		if(!td.classList.contains('back') || flipTimerId){
+		if(!td.classList.contains('back')  || flipTimerId){
 			return;
 		}
 		td.classList.remove('back');
@@ -54,6 +56,12 @@ window.onload=function(){
 			firstCard=td;
 		}else{
 			if(firstCard.num===td.num){
+				rest-=2;
+				if(rest===0){
+					clearInterval(timerId);
+				}
+				firstCard.classList.add('fadeout');
+				td.classList.add('fadeout');
 				firstCard=null;
 			}else{
 				flipTimerId=setTimeout(function(){
@@ -65,4 +73,10 @@ window.onload=function(){
 			}
 		}
 	}
+	const time=document.getElementById('time');
+	time.textContent=0;
+	let sec=0;
+	timerId=setInterval(function(){
+		time.textContent=++sec;
+	},1000);
 };
