@@ -123,7 +123,7 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="let num=document.getElementById(\"isNum\")";
+		ans="let num=document.getElementById(\"isNum\").value";
 		System.out.println("Q10.inputの名前inNumからきた文字列をインスタンスnumに代入せよ");
 		while(true){
 			input=sc.nextLine();
@@ -243,7 +243,7 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="ls.textContent='Item';";
+		ans="li.textContent='Item';";
 		System.out.println("Q19.Q18のliタグに文字列Itemを代入せよ");
 		while(true){
 			input=sc.nextLine();
@@ -268,7 +268,7 @@ public class Test{
 		}
 		System.out.println();
 		ans="document.querySelectorAll('a');";
-		System.out.println("Q19."タグのaのドムを全て取得せよ);
+		System.out.println("Q19.タグのaのドムを全て取得せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -291,8 +291,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="";
-		System.out.println("Q21.");
+		ans="num=parseInt(num);";
+		System.out.println("Q21.文字列numの値5をInt型にしてnumに代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -303,8 +303,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="";
-		System.out.println("Q22.");
+		ans="const btCheck=()=>{console.log('送信完了')};";
+		System.out.println("Q22.ボタンが押されたときに実行するbtcheckメソッドを書け。送信完了とコンソールに表示される");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
