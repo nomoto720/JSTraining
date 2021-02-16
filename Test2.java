@@ -3,20 +3,8 @@ public class Test{
 	public static void main(String[] args){
 		Scanner sc=new Scanner(System.in);	
 		String input;
-		String ans="document.getElementById(\"name\").textContent=str;";
-		System.out.println("Q1.Idがnameのhtmlにstrを表示できるようにせよ");
-		while(true){
-			input=sc.nextLine();
-			if(ans.equals(input)){
-				System.out.println("一行目正解です");
-				break;
-			}else{
-				System.out.println("違います");
-			}
-		}
-		System.out.println();
-		ans="const name=\"Tom\";";
-		System.out.println("Q2.定数nameを宣言し文字列Tomを代入せよ");
+		String ans="name=input('名前は?')";
+		System.out.println("Q1.名前は？と表示し入力させ値をnameに代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -27,8 +15,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="let nums=[1,2,3]";
-		System.out.println("Q3.配列numsを宣言し1,2,3を代入せよ");
+		ans="age=int(input('年齢は?'))";
+		System.out.println("Q2.年齢は？と表示し値を整数でageに代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -39,8 +27,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="console.log(nums[0])";
-		System.out.println("Q3.配列nmusの一番目の要素をコンソールに表示せよ");
+		ans="HelloHello";
+		System.out.println("Q3.print('Hello'*2)はなんと表示されるか");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -51,8 +39,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="let fnc1=function(str){console.log(str);};";
-		System.out.println("Q4.引数strをコンソールに表示するメソッドfnc1を作成せよ");
+		ans="height=float(input('身長は?')";
+		System.out.println("Q3.身長は?と表示し小数点のある値で受け取りheightに代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -63,8 +51,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="fnc1(\"あ\")";
-		System.out.println("Q5.メソッドfnc1に文字列あを引数に宣言せよ");
+		ans="1010";
+		System.out.println("Q4.x='10' y='10' print(x+Y)はなんて表示される？");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -75,8 +63,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="let pele=document.getElementsByTagName(\"p\");";
-		System.out.println("Q6.htmlのpタグのブロックを全て変数peleに代入せよ");
+		ans="print(i,end=' ')";
+		System.out.println("Q5.fou文で繰り返されるprint(i)を半角スペースであけて表示");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -87,8 +75,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="const func2=(x)=>{console.log(x);};";
-		System.out.println("Q7.ラムダ式でコンソールに引数を表示するfunc2メソッドを作成せよ。");
+		ans="num=random.randint(1,100)";
+		System.out.println("Q6.1から100の整数の乱数をnumに代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -99,8 +87,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="const func2=x=>{console.log(x);};";
-		System.out.println("Q8.Q7の引数を略して表示せよ");
+		ans="nums.append(5)";
+		System.out.println("Q7.リストnumsに値5を追加せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -111,8 +99,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="const func2=x=>console.log(x);";
-		System.out.println("Q9.Q8のメソッドも略して表示せよ");
+		ans="[1,2,3,1,2,3,1,2,3]";
+		System.out.println("Q8.data=[1,2,3]*3　print(data)は何を表示するか");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -123,8 +111,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="let num=document.getElementById(\"isNum\").value;";
-		System.out.println("Q10.inputの名前inNumからきた文字列をインスタンスnumに代入せよ");
+		ans="5";
+		System.out.println("Q9.data=[[0]*10]*10 data[1][1]=5 print(data[2][1])はなんと表示されるか");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -135,8 +123,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="strs.push('hello');";
-		System.out.println("Q11.strs配列の末尾に文字列helloを追加せよ");
+		ans="kuku=[[i*j for j in range(1,10)]for i in range(1,10)]";
+		System.out.println("Q10.内包表記で掛け算の二次元リストを作成しkukuに代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -147,8 +135,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="let strs=[];";
-		System.out.println("Q12.空の配列strsを作成せよ");
+		ans="print(set(nums))";
+		System.out.println("Q11.nums=[1,2,2,3]を{1,2,3}と表示せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -159,8 +147,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="let obj1={name:\"Tom\",age:29};";
-		System.out.println("Q13.オブジェクトobj1を作りプロパティに名前Tomと年齢29を代入せよ");
+		ans="print(len(set(nums)))";
+		System.out.println("Q12.リストnumsの値の種類の数を表示せよ";
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -171,8 +159,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="obj1.gender='man';";
-		System.out.println("Q14.obj1にgenderのプロパティを追加しmanを代入せよ");
+		ans="num=random.randrange(10,100,5)";
+		System.out.println("Q13.10から99の数字で5の倍数でのランダム数をnumに代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -183,8 +171,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="console.log(obj1.gender);";
-		System.out.println("Q14.obj1のgenderプロパティの中身をコンソールに表示せよ");
+		ans="n.sort()";
+		System.out.println("Q14.n=[3,2,4]を昇順に書き換えろ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -195,8 +183,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="window.alert('Hello');";
-		System.out.println("Q15.暗黙オブジェクトのwindowのアラートでHelloと表示せよ");	
+		ans="window.alert('n.sort(reverse=True)');";
+		System.out.println("Q15.先ほどのリストnを降順に書き換えろ");	
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -207,8 +195,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="window.onload=function(){};";
-		System.out.println("Q16.文章が読み込まれてからfunctionメソッドを実行する処理をかけ");
+		ans="n2=sorted(n,reverse=True)";
+		System.out.println("Q16.先ほどのnはそのままに降順にしn2に代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -219,8 +207,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="'3'===3";
-		System.out.println("Q17.文字列の3とint型の３を型も含めて同じかどうか判断する条件文");
+		ans="n3=sorted(n)";
+		System.out.println("Q17.先ほどのnはそのままに昇順に書き換えn3に代入せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -231,8 +219,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="document.createElement(\"li\");";
-		System.out.println("Q18.jsでliタグを作成せよ");
+		ans="(user+3-px)%3==2";
+		System.out.println("Q18.pcとuserでじゃんけん。userが勝ったときの条件文を作成せよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -243,8 +231,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="li.textContent='Item';";
-		System.out.println("Q19.Q18のliタグに文字列Itemを代入せよ");
+		ans="random.shuffle(l)";
+		System.out.println("Q19.リストlをランダムにシャッフルせよ");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -255,8 +243,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="ol.appendChild(li);";
-		System.out.println("Q19.Q18で作ったliタグをolタグの子要素にせよ");
+		ans="";
+		System.out.println("Q20.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
@@ -267,32 +255,8 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="document.querySelectorAll(\"a\");";
-		System.out.println("Q19.セレクタタグのaのドムを全て取得せよ");
-		while(true){
-			input=sc.nextLine();
-			if(ans.equals(input)){
-				System.out.println("正解です");
-				break;
-			}else{
-				System.out.println("違います");
-			}
-		}
-		System.out.println();
-		ans="p.textContent=null;";
-		System.out.println("Q20.p要素の子要素をすべて削除せよ");
-		while(true){
-			input=sc.nextLine();
-			if(ans.equals(input)){
-				System.out.println("正解です");
-				break;
-			}else{
-				System.out.println("違います");
-			}
-		}
-		System.out.println();
-		ans="num=parseInt(num);";
-		System.out.println("Q21.文字列numの値5をInt型にしてnumに代入せよ");
+		ans="";
+		System.out.println("Q21.");
 		while(true){
 			input=sc.nextLine();
 			if(ans.equals(input)){
