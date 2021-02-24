@@ -495,7 +495,7 @@ public class Test{
 			}
 		}
 		System.out.println();
-		ans="$(function(){$('#logo').css({color:'yellow',fontSize:'30px'}).on('click',function(){$(this).css({color:'red'})});});";
+		ans="$(function(){$('#logo').css({color:'yellow',fontSize:'10px'}).on('click',function(){$(this).css({color:'red'})});});";
 		System.out.println("Q38.メソッドチェーンで先程のメソッドにlogoをクリックしたときに文字色をredにするようにせよ");
 		while(true){
 			input=sc.nextLine();
