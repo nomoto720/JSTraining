@@ -7,30 +7,19 @@ window.onload=()=>{
 	const btn2=document.getElementById('btn2');
 	const result=document.getElementById('result');
 	btn1.addEventListener('click',()=>{
-		let ans=entry.value.toLowerCase();
-		let msg='';
-		if (ans == animals[index][1]){
-			correct++;
-			msg='正解!';
-		}else{
-			msg=`不正解!${animals[index][0]}の英単語は${animals[index][1]}`;
-		}
-		if(index==animals.length-1){
-			msg+=`<br>全${animals.length}問中,${correct}問正解`;
-			index=-1;
-		}
+		let alcohol=entry1.value;
+		let degree=entry2.value;
+		let water=entry3.value;
+		degree*=0.01;
+		let degree2=(degree*alcohol)/(alcohol+water);
+		let msg=`アルコール度数は${water}度です`;
 		result.innerHTML=msg;
-		result.classList.remove('fade');
-		setTimeout(function(){
-			result.classList.add('fade');
-		},1500);
-		setItem(++index);
-		entry.focus();
+
 	});
-	function setItem(index){
-		entry.value='';
-		ja.textContent=animals[index][0];
-		img.src='images/'+animals[index][2];
-	}
-	setItem(index);
+	btn2.addEventListener('click',()=>{
+		entry1.value='';
+		entry2.value='';
+		entry3.value='';
+		result.textContent='';
+	});
 }
