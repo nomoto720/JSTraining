@@ -7,12 +7,12 @@ window.onload=()=>{
 	const btn2=document.getElementById('btn2');
 	const result=document.getElementById('result');
 	btn1.addEventListener('click',()=>{
-		let alcohol=entry1.value;
-		let degree=entry2.value;
-		let water=entry3.value;
-		degree*=0.01;
-		let degree2=(degree*alcohol)/(alcohol+water);
-		let msg=`アルコール度数は${water}度です`;
+		let alcohol=parseFloat(entry1.value);
+		let degree=parseFloat(entry2.value);
+		let water=parseFloat(entry3.value);
+		degree/=100;
+		let degree2=(degree*alcohol)/(alcohol+water)*100;
+		let msg=`アルコール度数は${degree2.toFixed(1)}度です`;
 		result.innerHTML=msg;
 
 	});
