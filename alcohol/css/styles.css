@@ -1,0 +1,170 @@
+body{
+	background-color:#000033;
+}
+p{
+	color:white;
+	font-family: "M PLUS Rounded 1c";
+}
+.alchol{
+	position: relative;
+	margin-top:5%;
+}
+.alcoholImgA{
+	position: absolute;
+	margin-top:10px;
+	width: 60px;
+    border-top: 84px solid #a9d8e6;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+	height: 0;
+	border-radius:0 0 30px 30px;
+}
+.alcoholImgB{
+	position: absolute;
+	margin-left:8.8px;
+	margin-top:76px;
+	background-color:#a9d8e6;
+	width:58px;
+	height:20px;
+
+	border-radius: 50%;
+}
+.alcoholImgC{
+	position: absolute;
+	margin-top:10px;
+	margin-left:1.5px;
+	width: 57px;
+	border-top: 84px solid #a9d8e6;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	border-radius:0 0 30px 30px;
+}
+.alcoholImgD{
+	position: absolute;
+	margin-top:7px;
+	width:79px;
+	height: 6px;
+	background-color: #a9d8e6;
+	border-radius: 50%;
+}
+.alcoholImgE{
+	position: absolute;
+	margin-top:54px;
+	margin-left:40px;
+	background-color: white;
+	width: 20px;
+	height:20px;
+	border-radius: 15%;
+	transform: rotate(-23deg);
+	opacity:0.4;
+}
+.alcoholImgG{
+	position: absolute;
+	margin-top:44px;
+	margin-left:20px;
+	background-color: white;
+	width: 20px;
+	height:20px;
+	border-radius: 15%;
+	transform: rotate(23deg);
+	opacity:0.4;
+}
+.alcoholImgH{
+	position: absolute;
+	margin-top:24px;
+	margin-left:30px;
+	background-color: white;
+	width: 20px;
+	height:20px;
+	border-radius: 15%;
+	transform: rotate(-28deg);
+	opacity:0.4;
+}
+
+.alcoholImgF{
+	position: absolute;
+	margin-top:30px;
+	margin-left:7px;
+	width: 50px;
+	border-top: 55px solid #b35032;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	height: 0;
+	border-radius:10px 10px 27px 27px;
+	opacity:0.9;
+}
+
+.emptyBox{
+		height:100px;
+}
+
+
+.alchol2{
+	position: relative;
+	margin-top:50%;
+}
+.alcoholImg1{
+	position: absolute;
+	margin-top:10px;
+	width: 60px;
+    border-bottom: 85px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+	height: 0;
+	border-radius:0 0 45px 45px;
+}
+.alcoholImg2{
+	position: absolute;
+	margin-top:10px;
+	margin-left:1.5px;
+	width: 57px;
+	border-bottom: 85px solid #000043;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	border-radius:0 0 45px 45px;
+}
+.alcoholImg3{
+	position: absolute;
+	margin-left:3.1px;
+	margin-top:52px;
+	background-color:#000033;
+	width:70px;
+	height:50px;
+	border-bottom: solid 3.5px white;
+	border-left: solid 2px white;
+	border-right: solid 2px white;
+	border-radius:20px 20px 40px 40px;
+}
+.alcoholImg4{
+	position: absolute;
+	margin-left:9.9px;
+	margin-top:6px;
+	width:58px;
+	height: 6px;
+	border-top: solid 0.5px white;
+	border-bottom: solid 1.2px white;
+	border-left: solid 1px white;
+	border-right: solid 1px white;
+	background-color: #000033;
+	border-radius: 50%;
+}
+.alcoholImg5{
+		position: absolute;
+	margin-left:35px;
+	margin-top:103px;
+	background-color: white;
+		width:9px;
+	height:88px;
+			border-radius:10px 10px 10px 10px;
+}
+.alcoholImg6{
+		position: absolute;
+	margin-left:36px;
+	margin-top:106px;
+	background-color: #000033;
+		width:6px;
+	height:83px;
+		border-radius:10px 10px 10px 10px;
+}
