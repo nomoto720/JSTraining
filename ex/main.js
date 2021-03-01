@@ -1,7 +1,7 @@
 window.onload=()=>{
-
-(function () {
-
+	let wave=11;
+var log=function () {
+			
 var unit = 13,
     canvas, context, canvas2, context2,
     height, width, xAxis, yAxis,
@@ -50,7 +50,7 @@ function drawWave(color, alpha, zoom, delay) {
     context.globalAlpha = alpha;
 
     context.beginPath(); //パスの開始
-    drawSine(draw.t / 0.4, zoom, delay);
+    drawSine(draw.t / 0.3, zoom, delay);
     context.lineTo(width + 10, height); //パスをCanvasの右下へ
     context.lineTo(0, height); //パスをCanvasの左下へ
     context.closePath() //パスを閉じる
@@ -63,15 +63,19 @@ function drawSine(t, zoom, delay) {
     var y = Math.sin(x)/zoom;
     context.moveTo(yAxis, unit*y+xAxis); //スタート位置にパスを置く
     
-    // Loop to draw segments (横幅の分、波を描画)
-    for (i = yAxis; i <= width + 10; i += 10) {
-        x = t+(-yAxis+i)/unit/zoom;
-        y = Math.sin(x - delay)/8;
-        context.lineTo(i, unit*y+xAxis);
-    }
-}
+				// Loop to draw segments (横幅の分、波を描画)
 
+		for (i = yAxis; i <= width + 10; i += 10) {
+			x = t+(-yAxis+i)/unit/zoom;			
+			y = Math.sin(x - delay)/wave;
+		
+			context.lineTo(i, unit*y+xAxis);
+		}
+		wave+=0.04;
+}
 init();
-    
-})();
+
+}();
+
+setInterval(log, 8000);
 }
