@@ -22,4 +22,5 @@ window.onload=()=>{
 		entry3.value='';
 		result.textContent='';
 	});
+
 }
