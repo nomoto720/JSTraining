@@ -10,11 +10,11 @@
 <body>
 <div id="container">
 	<p class="title">お酒の量(ml)</p>
-	<input type="number" id="entry1">
+	<input type="number" id="entry1" min="1" value="0">
 	<p class="title">アルコール度数</p>
-	<input type="number" id="entry2">
+	<input type="number" id="entry2" min="1" value="0">
 	<p class="title">割るお水の量(ml)</p>
-	<input type="number" id="entry3">
+	<input type="number" id="entry3" min="1" value="0">
 	<img id="img">
 	<br>
 	<button id="btn1">計算する</button>
@@ -23,16 +23,17 @@
 		<div class="alcoholImgA"></div>
 		<div class="alcoholImgB"></div>
 		<div class="alcoholImgC"></div>
-		<div class="alcoholImgF"></div>
+		<div class="alcoholImgF" id="waterColor"></div>
 		<div class="alcoholImgE"></div>
 		<div class="alcoholImgG"></div>
 		<div class="alcoholImgH"></div>
 		<div class="alcoholImgD"></div>
+		
 	</div>
 			<div class="emptyBox"></div>
 	<p id="result"></p>
 
-
+<canvas id="sineCanvas" width="20" height="30"></canvas>
 
 	<div class="alchol2">
 		<div class="alcoholImg1"></div>
