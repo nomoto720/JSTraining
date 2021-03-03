@@ -14,10 +14,11 @@ window.onload=()=>{
 	let r=242;
 	let g=235;
 	let b=165;
+	let wave=8;
+	let cCode="#f2e6a0";
 	
-
-	function waterWave() {
-			let wave=11;
+	function waterWave(){
+			wave=8;
 var unit = 13,
     canvas, context, canvas2, context2,
     height, width, xAxis, yAxis,
@@ -27,8 +28,8 @@ function init() {
     
     canvas = document.getElementById("sineCanvas");
     
-    canvas.width =52; 
-    canvas.height = 20;
+    canvas.width =64; 
+    canvas.height = 22;
     
     context = canvas.getContext("2d");
     
@@ -41,13 +42,13 @@ function init() {
     draw();
 }
 
-	function draw() {
+function draw() {
     
     // キャンバスの描画をクリア
     context.clearRect(0, 0, width, height);
 
-    //波を描画
-    drawWave('#10c2cd', 1, 0.1, 0);
+			//波を描画
+    drawWave(cCode, 1, 0.1, 0);
     
     // Update the time and draw again
     draw.seconds = draw.seconds + .009;
@@ -87,13 +88,17 @@ function drawSine(t, zoom, delay) {
 		
 			context.lineTo(i, unit*y+xAxis);
 		}
-		wave+=0.04;
+		
+			//if(wave<=35){wave+=0.01;}
+			
 }
 init();
+	}
+	waterWave();
+	
 
-}
-waterWave();
-
+	
+	
 	function alcoholCalc(){
 		alcohol=parseFloat(entry1.value);
 		degree=parseFloat(entry2.value);
@@ -102,7 +107,7 @@ waterWave();
 		degree2=(degree*alcohol)/(alcohol+water)*100;
 		degree2=degree2.toFixed(1);
 		colorChange();
-		waterWave();
+		//if(wave>=35){ waterWave(); }
 	}
 	function hex(num){
 		let hex=num.toString(16);
@@ -113,9 +118,9 @@ waterWave();
 	}
 	function colorChange(){
 		let num=degree2*10;
-		g=230-num;
+		g=230-num; 
 		b=160-num;
-		let cCode="#"+hex(r)+hex(g)+hex(b);
+		cCode="#"+hex(r)+hex(g)+hex(b);
 		waterColor.style.borderTopColor=cCode;
 	}
 	entry1.addEventListener("input",function(){
