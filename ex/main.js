@@ -1,81 +1,19 @@
 window.onload=()=>{
-	let wave=11;
-var log=function () {
-			
-var unit = 13,
-    canvas, context, canvas2, context2,
-    height, width, xAxis, yAxis,
-    draw;
+const signs = document.querySelectorAll('x-sign')
+const randomIn = (min, max) => (
+  Math.floor(Math.random() * (max - min + 1) + min)
+)
 
-function init() {
-    
-    canvas = document.getElementById("sineCanvas");
-    
-    canvas.width =52; 
-    canvas.height = 20;
-    
-    context = canvas.getContext("2d");
-    
-    height = canvas.height;
-    width = canvas.width;
-    
-    xAxis = Math.floor(height/2);
-    yAxis = 0;
-    
-    draw();
+const mixupInterval = el => {
+  const ms = randomIn(2000, 4000)
+  el.style.setProperty('--interval', `${ms}ms`)
 }
 
-function draw() {
-    
-    // キャンバスの描画をクリア
-    context.clearRect(0, 0, width, height);
+signs.forEach(el => {
+  mixupInterval(el)
+  el.addEventListener('webkitAnimationIteration', () => {
+    mixupInterval(el)
+  })
+})
 
-    //波を描画
-    drawWave('#10c2cd', 1, 0.1, 0);
-    
-    // Update the time and draw again
-    draw.seconds = draw.seconds + .009;
-    draw.t = draw.seconds*Math.PI;
-    setTimeout(draw, 10);
-};
-draw.seconds = 0;
-draw.t = 0;
-
-/**
-* 波を描画
-* drawWave(色, 不透明度, 波の幅のzoom, 波の開始位置の遅れ)
-*/
-function drawWave(color, alpha, zoom, delay) {
-    context.fillStyle = color;
-    context.globalAlpha = alpha;
-
-    context.beginPath(); //パスの開始
-    drawSine(draw.t / 0.3, zoom, delay);
-    context.lineTo(width + 10, height); //パスをCanvasの右下へ
-    context.lineTo(0, height); //パスをCanvasの左下へ
-    context.closePath() //パスを閉じる
-    context.fill(); //塗りつぶす
-}
-
-function drawSine(t, zoom, delay) {
-
-    var x = t; //時間を横の位置とする
-    var y = Math.sin(x)/zoom;
-    context.moveTo(yAxis, unit*y+xAxis); //スタート位置にパスを置く
-    
-				// Loop to draw segments (横幅の分、波を描画)
-
-		for (i = yAxis; i <= width + 10; i += 10) {
-			x = t+(-yAxis+i)/unit/zoom;			
-			y = Math.sin(x - delay)/wave;
-		
-			context.lineTo(i, unit*y+xAxis);
-		}
-		wave+=0.04;
-}
-init();
-
-}();
-
-setInterval(log, 8000);
 }

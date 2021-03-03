@@ -1,6 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 body{
 	background-color:#000033;
 }
+
+
+h1 {
+  font-size: calc(10px + 6vh);
+  line-height: calc(10px + 10vh);
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 58px #ff0000;
+    color: #fff6a9;
+  font-family: "Monoton", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+--body {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+  background-color:black;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,0 0 40px #ffa500,  0 0 58px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,0 0 40px #ffa500, 0 0 58px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+
+
 p{
 	color:white;
 	font-family: "M PLUS Rounded 1c";
@@ -21,6 +93,7 @@ p{
 	border-radius:0 0 30px 30px;
 }
 .alcoholImgB{
+	box-shadow: 0 0 5px #a9d8e6, 0 0 15px #a9d8e6, 0 0 20px #a9d8e6, 0 0 40px #a9d8e6, 0 0 60px #a9d8e6;
 	position: absolute;
 	margin-left:8.8px;
 	margin-top:76px;
@@ -31,6 +104,7 @@ p{
 	border-radius: 50%;
 }
 .alcoholImgC{
+	
 	position: absolute;
 	margin-top:10px;
 	margin-left:1.5px;
@@ -89,6 +163,7 @@ p{
 	margin-left:7px;
 	width: 50px;
 	border-top: 55px solid #f2e6a0;
+	
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 	height: 0;
