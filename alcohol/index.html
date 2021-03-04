@@ -4,24 +4,46 @@
 <meta charset="utf-8">
 <title>animal</title>
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet" />
 <script src="js/main.js"></script>
 </head>
 <body>
 <div id="container">
 	<h1>Alcohol<br>Hour</h1>
-	<p class="title">お酒の量(ml)</p>
-
-	<div class="alcohol-wrap">
-		<input type="number" class="alcohol-number" id="entry1" min="1" value="0"  placeholder="">
-		<label>お酒の量(ml)</label>
+	<div class="empty1"></div>
+			<div class="cPrent">
+				<div class="circle">◯</div>
+			</div>
+			<h2 >水割り<br>アルコール度数<br>計算機</h2>
+			<div class="empty"></div>
+			
+			<div class="alcoholbox1">
+				<div class="alcoholtitle1"><span class="title">お酒の量（ml）</span></div>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry1" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</div>
+			<br>
+			<div class="alcoholbox1">
+				<div class="alcoholtitle1"><span class="title">アルコール度数</span></div>
+		<div class="alcohol-wrap">
+		<input type="number" class="alcohol-number" id="entry2" min="1" value="0" >
 		<span class="focus_line"><i></i></span>
-	</div>
+		</div>
+			</div>
+			<br>
+					<div class="alcoholbox1">
+				<div class="alcoholtitle1"><span class="title">割る水の量(ml)</span></div>
+		<div class="alcohol-wrap">
+		<input type="number" class="alcohol-number" id="entry3" min="1" value="0" >
+		<span class="focus_line"><i></i></span>
+		</div>
+			</div>
+			
 
-	<p class="title">アルコール度数</p>
-	<input type="number" id="entry2" min="1" value="0">
-	<p class="title">割るお水の量(ml)</p>
-	<input type="number" id="entry3" min="1" value="0">
 	<img id="img">
 	<br>
 	<div class=calcButton>
@@ -51,6 +73,7 @@
 		<div class="alcoholImg5"></div>
 		<div class="alcoholImg6"></div>
 	</div>
+			
 </div>
 </body>
 </html>

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-
 body{
 	background-color:#000033;
 }
@@ -13,8 +12,8 @@ body{
 }
 
 h1 {
-  font-size: calc(10px + 9vh);
-  line-height: calc(10px + 12vh);
+  font-size: 13vw;
+  line-height: 18vw;
 
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 58px #ff0000;
     color: #fff6a9;
@@ -23,16 +22,6 @@ h1 {
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
 }
-
---body {
---  padding: 2vw;
---  display: flex;
- -- justify-content: center;
---  align-items: center;
---  height: 100vh;
---  background: #222;
---  background-color:black;
---}
 
 @-webkit-keyframes blink {
   20%,
@@ -77,22 +66,124 @@ h1 {
     color: #fff6a9;
   }
 }
+.cPrent{
+	position: relative;
+	margin-right:23vh;
+}
+.circle{
+	margin-top:-6vh;
+	font-size:24vh;
+	font-weight: lighter;
+	font-family: sans-serif;
+	display: block;  
+	position: absolute;
+	color:#FF3399;
+	text-shadow:  0 0 30px #00ECFF;
+animation: blink 12s infinite;
+  -webkit-animation: blink2 10s infinite;
+}
+
+.empty1{
+	margin-top:360px;
+}
 
 
+h2{
+	font-family: "M PLUS Rounded 1c";
+	font-size: 4vh;
+	line-height: 6vh;
+	letter-spacing: 2px;
+	transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,0 0 40px #ffa500,  0 0 58px #ff0000;
+    color: #fff6a9;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink2 10s infinite;
+}
 
-p{
+@-webkit-keyframes blink2 {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,0 0 40px #ffa500,  0 0 58px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink2 {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,0 0 40px #ffa500,  0 0 58px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+
+.empty{
+	margin-top:60px;
+}
+
+
+.alcoholbox1{
+	display:flex;
+	margin-top:2vh;
+}
+.alcoholtitle1{
+	margin-top:1.2vh;
+}
+.title{
+	font-size:2.2vh;
+	margin-right:5vw;
 	color:white;
 	font-family: "M PLUS Rounded 1c";
+	letter-spacing: 1px;
 }
+p{
+	font-size:2.2vh;
+	color:white;
+	font-family: "M PLUS Rounded 1c";
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+
+
 
 
 .alcohol-wrap {
 	position: relative;
-	width: 80%;
-	margin: 40px 3%;
 }
 .alcohol-wrap input[type='numeber'] {
-	font: 15px/24px sans-serif;
+	font: 2vh sans-serif;
 	box-sizing: border-box;
 	width: 100%;
 	letter-spacing: 1px;
@@ -102,21 +193,24 @@ p{
 	outline: none;
 }
 .alcohol-number {
-	padding: 7px 14px;
+	font-size:2.2vh;
+	padding: 1vh 1vw;
 	transition: 0.4s;
 	border: 1px solid white;
---	background: transparent;
+	--	background: transparent;
+	border-radius: 5px;
 }
 .alcohol-number ~ .focus_line:before,
 .alcohol-number ~ .focus_line:after {
 	position: absolute;
-	top: -1px;
+
 	left: 50%;
 	width: 0;
-	height: 2px;
+	height: 1.5px;
 	content: '';
-	transition: 0.4s;
-	background-color: #FFCC66;
+	transition: 0.6s;
+	background-color: #fff6a9;
+
 }
 .alcohol-number ~ .focus_line:after {
 	top: auto;
@@ -127,11 +221,11 @@ p{
 	position: absolute;
 	top: 50%;
 	left: 0;
-	width: 2px;
+	width: 1.5px;
 	height: 0;
 	content: '';
-	transition: 0.6s;
-	background-color: #FFCC66;
+	transition: 0.8s;
+	background-color: #fff6a9;
 }
 .alcohol-number ~ .focus_line i:after {
 	right: 0;
@@ -149,8 +243,8 @@ p{
 .alcohol-number:focus ~ .focus_line i:after,
 .alcohol-wrap.alcohol-number ~ .focus_line i:before,
 .alcohol-wrap.alcohol-number ~ .focus_line i:after {
-	top: -1px;
-	height: 100%;
+	top: -0.1px;
+	height: 96%;
 	transition: 0.6s;
 }
 .alcohol-number ~ label {
@@ -163,15 +257,8 @@ p{
 	letter-spacing: 0.5px;
 	color: #aaaaaa;
 }
-.alcohol-number:focus ~ label,
-.cp_iptxt.ef ~ label {
-	font-size: 16px;
-	font-family: "M PLUS Rounded 1c";
-	top: -22px;
-	left: 0;
-	transition: 0.3s;
-	color: #FFCC66;
-}
+
+
 .calcButton{
 	display:flex;
 	
