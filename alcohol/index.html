@@ -9,17 +9,25 @@
 </head>
 <body>
 <div id="container">
-	<h1>Alcohol Hour</h1>
+	<h1>Alcohol<br>Hour</h1>
 	<p class="title">お酒の量(ml)</p>
-	<input type="number" id="entry1" min="1" value="0">
+
+	<div class="alcohol-wrap">
+		<input type="number" class="alcohol-number" id="entry1" min="1" value="0"  placeholder="">
+		<label>お酒の量(ml)</label>
+		<span class="focus_line"><i></i></span>
+	</div>
+
 	<p class="title">アルコール度数</p>
 	<input type="number" id="entry2" min="1" value="0">
 	<p class="title">割るお水の量(ml)</p>
 	<input type="number" id="entry3" min="1" value="0">
 	<img id="img">
 	<br>
+	<div class=calcButton>
 	<button id="btn1">計算する</button>
 	<button id="btn2">クリア</button>
+	</div>
 	<div class="alchol">
 		<div class="alcoholImgA"></div>
 		<div class="alcoholImgB"></div>
