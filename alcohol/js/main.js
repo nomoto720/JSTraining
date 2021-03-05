@@ -8,6 +8,7 @@ window.onload=()=>{
 	const result=document.getElementById('result');
 	const waterColor=document.getElementById('waterColor');
 	const cup=document.getElementById('cup');
+	const cup2=document.getElementById('cup2');
 	let alcohol=0;
 	let degree=0;
 	let water=0;
@@ -17,103 +18,109 @@ window.onload=()=>{
 	let b=165;
 	let wave=8;
 	let cCode="#f2e6a0";
-	let mt=0;
-	let mr=0;
-for(let i=0;i<10;i++){
-	const elem=document.createElement('div');
-	elem.style.position="absolute";
-	elem.style.marginTop=mt+"px";
-	elem.style.marginRight=mr+"10px";
-	elem.style.width="12px";
-	elem.style.height="12px";
-	elem.style.backgroundColor="black";
-	elem.style.borderRadius="50%";
-	cup.appendChild(elem);
-	mt+=3;
-	mr+=5;
+	
+	
+	let mr=-4;
+	let mt=28;
+	let num=[3,7,10,12];
+	for(let j=0;j<4;j++){
+		for(let i=0;i<4;i++){
+			if(j==0){	mr+=num[i]; mt-=num[3-i];
+			}else if(j==1){ mr+=num[3-i]; mt+=num[i];		
+			}else if(j==2){ mr-=num[i]; mt+=num[3-i];
+			}else{ mr-=num[3-i]; mt-=num[i]; }		
+		const elem=document.createElement('div');
+		elem.style.position="absolute";
+		elem.style.margin=mr+"px";	
+		elem.style.marginTop=mt+"px";
+		elem.style.width="8px";
+		elem.style.height="8px";
+		elem.style.backgroundColor="#000033";
+		elem.style.borderRadius="50%";
+		cup.appendChild(elem);	
+		}
+	}
+	mr=-4;
+	mt=28;
+	for(let j=0;j<4;j++){
+		for(let i=0;i<4;i++){
+			if(j==0){	mr+=num[i]; mt-=num[3-i];
+			}else if(j==1){ mr+=num[3-i]; mt+=num[i];		
+			}else if(j==2){ mr-=num[i]; mt+=num[3-i];
+			}else{ mr-=num[3-i]; mt-=num[i]; }		
+		const elem=document.createElement('div');
+		elem.style.position="absolute";
+		elem.style.margin=mr+"px";	
+		elem.style.marginTop=mt+"px";
+		elem.style.width="8px";
+		elem.style.height="8px";
+		elem.style.backgroundColor="#000033";
+		elem.style.borderRadius="50%";
+		cup2.appendChild(elem);	
+		}
 	}
 	
 	function waterWave(){
-			wave=8;
-var unit = 13,
-    canvas, context, canvas2, context2,
-    height, width, xAxis, yAxis,
-    draw;
+		wave=8;
+		var unit = 13,
+		canvas, context, canvas2, context2,
+		height, width, xAxis, yAxis,
+		draw;
 
-function init() {
-    
-    canvas = document.getElementById("sineCanvas");
-    
-    canvas.width =64; 
-    canvas.height = 22;
-    
-    context = canvas.getContext("2d");
-    
-    height = canvas.height;
-    width = canvas.width;
-    
-    xAxis = Math.floor(height/2);
-    yAxis = 0;
-    
-    draw();
-}
+	function init() {
+		canvas = document.getElementById("sineCanvas");
+		canvas.width =64; 
+		canvas.height = 22;
+		context = canvas.getContext("2d");
+		height = canvas.height;
+		width = canvas.width;
+		xAxis = Math.floor(height/2);
+		yAxis = 0;
+		draw();
+	}
 
-function draw() {
-    
-    // キャンバスの描画をクリア
-    context.clearRect(0, 0, width, height);
+	function draw() {
+		// キャンバスの描画をクリア
+		context.clearRect(0, 0, width, height);
+		//波を描画
+		drawWave(cCode, 1, 0.1, 0);
+		// Update the time and draw again
+		draw.seconds = draw.seconds + .009;
+		draw.t = draw.seconds*Math.PI;
+		setTimeout(draw, 10);
+	};
+	draw.seconds = 0;
+	draw.t = 0;
+	/**
+	* 波を描画
+	* drawWave(色, 不透明度, 波の幅のzoom, 波の開始位置の遅れ)
+	*/
+	function drawWave(color, alpha, zoom, delay) {
+		context.fillStyle = color;
+		context.globalAlpha = alpha;
+		context.beginPath(); //パスの開始
+		drawSine(draw.t / 0.3, zoom, delay);
+		context.lineTo(width + 10, height); //パスをCanvasの右下へ
+		context.lineTo(0, height); //パスをCanvasの左下へ
+		context.closePath() //パスを閉じる
+		context.fill(); //塗りつぶす
+	}
 
-			//波を描画
-    drawWave(cCode, 1, 0.1, 0);
-    
-    // Update the time and draw again
-    draw.seconds = draw.seconds + .009;
-    draw.t = draw.seconds*Math.PI;
-    setTimeout(draw, 10);
-};
-draw.seconds = 0;
-draw.t = 0;
-
-/**
-* 波を描画
-* drawWave(色, 不透明度, 波の幅のzoom, 波の開始位置の遅れ)
-*/
-function drawWave(color, alpha, zoom, delay) {
-    context.fillStyle = color;
-    context.globalAlpha = alpha;
-
-    context.beginPath(); //パスの開始
-    drawSine(draw.t / 0.3, zoom, delay);
-    context.lineTo(width + 10, height); //パスをCanvasの右下へ
-    context.lineTo(0, height); //パスをCanvasの左下へ
-    context.closePath() //パスを閉じる
-    context.fill(); //塗りつぶす
-}
-
-function drawSine(t, zoom, delay) {
-
-    var x = t; //時間を横の位置とする
-    var y = Math.sin(x)/zoom;
-    context.moveTo(yAxis, unit*y+xAxis); //スタート位置にパスを置く
-    
-				// Loop to draw segments (横幅の分、波を描画)
-
+	function drawSine(t, zoom, delay) {
+		var x = t; //時間を横の位置とする
+		var y = Math.sin(x)/zoom;
+		context.moveTo(yAxis, unit*y+xAxis); //スタート位置にパスを置く
+		// Loop to draw segments (横幅の分、波を描画)
 		for (i = yAxis; i <= width + 10; i += 10) {
 			x = t+(-yAxis+i)/unit/zoom;			
-			y = Math.sin(x - delay)/wave;
-		
+			y = Math.sin(x - delay)/wave;	
 			context.lineTo(i, unit*y+xAxis);
 		}
-		
-			//if(wave<=35){wave+=0.01;}
-			
-}
-init();
+		//if(wave<=35){wave+=0.01;}	
+	}
+	init();
 	}
 	waterWave();
-	
-
-	
 	
 	function alcoholCalc(){
 		alcohol=parseFloat(entry1.value);

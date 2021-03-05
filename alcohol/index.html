@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>animal</title>
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,47 +14,53 @@
 <div id="container">
 	<h1>Alcohol<br>Hour</h1>
 	<div class="empty1"></div>
-			<div class="cPrent">
-				<div class="circle">◯</div>
-			</div>
-			<h2 >水割り<br>アルコール度数<br>計算機</h2>
-			<div class="empty"></div>
-			
-			<div class="alcoholbox1">
-				<div class="alcoholtitle1"><span class="title">お酒の量（ml）</span></div>
-				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry1" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</div>
-			<br>
-			<div class="alcoholbox1">
-				<div class="alcoholtitle1"><span class="title">アルコール度数</span></div>
-		<div class="alcohol-wrap">
-		<input type="number" class="alcohol-number" id="entry2" min="1" value="0" >
-		<span class="focus_line"><i></i></span>
-		</div>
-			</div>
-			<br>
-					<div class="alcoholbox1">
-				<div class="alcoholtitle1"><span class="title">割る水の量(ml)</span></div>
-		<div class="alcohol-wrap">
-		<input type="number" class="alcohol-number" id="entry3" min="1" value="0" >
-		<span class="focus_line"><i></i></span>
-		</div>
-			</div>
-			
-
-	<img id="img">
-	<br>
-<div class"bottoleCupBox" id="cup">
-<div class="bottleCup"></div>
-<div class="bottleAround"></div>
-</div>
-	<div class=calcButton>
-	<button id="btn1">計&nbsp;算</button>
-	<button id="btn2">クリア</button>
+	<div class="cPrent">
+		<div class="circle">◯</div>
 	</div>
+	<h2 >水割り<br>アルコール度数<br>計算機</h2>
+	<div class="empty"></div>
+			
+	<div class="alcoholbox1">
+		<div class="alcoholtitle1"><span class="title">お酒の量（ml）</span></div>
+		<div class="alcohol-wrap">
+			<input type="number" class="alcohol-number" id="entry1" min="1" value="0" >
+	<span class="focus_line"><i></i></span>
+		</div>
+	</div>
+	<br>
+	<div class="alcoholbox1">
+		<div class="alcoholtitle1"><span class="title">アルコール度数</span></div>
+		<div class="alcohol-wrap">
+			<input type="number" class="alcohol-number" id="entry2" min="1" value="0" >
+			<span class="focus_line"><i></i></span>
+		</div>
+	</div>
+	<br>
+	<div class="alcoholbox1">
+		<div class="alcoholtitle1"><span class="title">割る水の量(ml)</span></div>
+		<div class="alcohol-wrap">
+			<input type="number" class="alcohol-number" id="entry3" min="1" value="0" >
+			<span class="focus_line"><i></i></span>
+		</div>
+	</div>		
+	<br>
+	<div class"bottleCupBox" id="cup">
+		<div class="bottleCup"></div>
+	</div>
+	<div class=calcButton>
+		<button id="btn1">計&nbsp;算</button>
+		<div class="btn2Deco">&#x265b;</div>
+		<div class="btn1Deco">&#10027;Calc&#10027;</div>
+	</div>
+	<div class"bottleCupBox2" id="cup2">
+		<div class="bottleCup2"></div>
+	</div>
+	<div class=calcButton2>
+		<button id="btn2">クリア</button>
+		<div class="btn2Deco">&#9816;</div>
+		<div class="btn1Deco">&nbsp;&nbsp;Clear</div>
+	</div>
+	<div class="yohaku"></div>
 	<div class="alchol">
 		<div class="alcoholImgA"></div>
 		<div class="alcoholImgB"></div>
@@ -61,11 +68,11 @@
 		<div class="alcoholImgF" id="waterColor"></div>
 		<div class="alcoholImgI"><canvas id="sineCanvas" width="20" height="30"></canvas></div>
 		<div class="alcoholImgE"></div>
-	<div class="alcoholImgG"></div>
+		<div class="alcoholImgG"></div>
 		<div class="alcoholImgH"></div>
 		<div class="alcoholImgD"></div>
 	</div>
-			<div class="emptyBox"></div>
+	<div class="emptyBox"></div>
 	<p id="result"></p>
 
 

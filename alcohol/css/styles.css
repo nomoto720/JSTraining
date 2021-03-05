@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lobster&family=Monoton&family=Open+Sans&family=Stick&display=swap');
 body{
 	background-color:#000033;
 }
@@ -79,7 +80,7 @@ h1 {
 	position: absolute;
 	color:#FF3399;
 	text-shadow:  0 0 30px #00ECFF;
-animation: blink 12s infinite;
+	animation: blink 12s infinite;
   -webkit-animation: blink2 10s infinite;
 }
 
@@ -259,64 +260,121 @@ p{
 }
 
 
-.calcButton{
-	display:flex;
-	
-}
-button{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        padding: 0;
-        appearance: none;
-}
-}
-.bottleCupBox{
-	position: relative;
-}
 
+#cup{
+	position: relative;
+	background-color:yellow;
+	margin-right:150px;
+}
+	
+	
 .bottleCup{
 	position:absolute;
-	width:68px;
-	height:68px;
-	background-color:#DDDDDD;
-	margin-right:10px;
+	width:64px;
+	height:64px;
+	background-color:#BBBBBB;
+	margin-right:100px;
 	border-radius:50%;
+	text-shadow:0 0 2px white;
 }
-/*.bottleAround{
-	position:absolute;
+	
+button{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+}
+.calcButton{
+	margin-right:138px;
 	margin-top:6px;
-	width:12px;
-	height:12px;
-	background-color:black;
-	margin-right:10px;
-	border-radius:50%;
-}*/
+}
 #btn1{
-	padding:6px 12px;
+	position:absolute;
+	padding:5px 1px;
 	font-weight: bold;
-	width:65px;
-	background-color:#663333;
-	color:white;
-	margin-right:10px;
-	font-size:16px;
-	font-family: "M PLUS Rounded 1c";
+	width:53px;
+	height:53px;
+	background-color:#000055;
+	color:#EEEEEE;
+	font-size:14px;
+	font-family: 'Hiragino Kaku Gothic Std';
 	border-radius:50%;
+	border: double 2px #EEEEEE;
+	text-shadow:-8px -16px 16px #EEEEEE;
+	transition: all 0.5s 0s ease;
 }
-#btn2{
-	padding:6px 12px;
-font-weight: bold;
-	width:65px;
+#btn1:hover{
+	box-shadow:0 0 23px #EEEEEE;
+	background-color:#AA0000;
 	font-size:16px;
-	background-color:#663333;
-	color:white;
-	font-family: "M PLUS Rounded 1c";
-	border-radius:50%;
+}
+.btn1Deco{
+	position:absolute;
+	margin-left:10px;
+	margin-top:33px;
+	font-family: 'Lobster', cursive;
+	font-size:10px;
+	color:#FFD700	;
+	text-shadow:0 0 15px #EEEEEE;
+	 pointer-events: none;
 }
 
+#cup2{
+	position: relative;
+	background-color:yellow;
+	margin-left:20px;
+	margin-top:-4px;
+}
+.bottleCup2{
+	position:absolute;
+	width:64px;
+	height:64px;
+	background-color:#BBBBBB;
+	margin-right:100px;
+	border-radius:50%;
+	text-shadow:0 0 2px white;
+}
+.calcButton2{
+	margin-left:31px;
+	margin-top:6px;
+}
+
+.btn2Deco{
+	position:absolute;
+	margin-left:21px;
+	margin-top:-2.5px;
+	font-size:17px;
+	color:#FFD700	;
+	text-shadow:0 0 15px #CCCCCC;
+	
+	 pointer-events: none;
+}
+	#btn2{
+	position:absolute;
+	padding:5px 1px;
+
+	width:53px;
+	height:53px;
+	background-color:#004400;
+	color:#EEEEEE;
+	font-size:14px;
+	font-family: 'HiraKakuPro-W6';
+	border-radius:50%;
+	border: double 2px #EEEEEE;
+	text-shadow:-8px -16px 16px #EEEEEE;
+	transition: all 0.5s 0s ease;
+}
+#btn2:hover{
+	box-shadow:0 0 23px #EEEEEE;
+	background-color:#AA0000;
+	font-size:15px;
+}
+.yohaku{
+	margin-top:50px;
+}
 canvas{
-
 }
 
 .alchol{
