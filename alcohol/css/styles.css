@@ -68,11 +68,11 @@ h1 {
 }
 .cPrent{
 	position: relative;
-	margin-right:23vh;
+	margin-right:150px;
 }
 .circle{
-	margin-top:-6vh;
-	font-size:24vh;
+	margin-top:-38px;
+	font-size:156px;
 	font-weight: lighter;
 	font-family: sans-serif;
 	display: block;  
@@ -90,8 +90,8 @@ animation: blink 12s infinite;
 
 h2{
 	font-family: "M PLUS Rounded 1c";
-	font-size: 4vh;
-	line-height: 6vh;
+	font-size: 25px;
+	line-height: 33px;
 	letter-spacing: 2px;
 	transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
@@ -155,14 +155,14 @@ h2{
 
 .alcoholbox1{
 	display:flex;
-	margin-top:2vh;
+	margin-top:11px;
 }
 .alcoholtitle1{
-	margin-top:1.2vh;
+	margin-top:5px;
 }
 .title{
-	font-size:2.2vh;
-	margin-right:5vw;
+	font-size:17px;
+	margin-right:18px;
 	color:white;
 	font-family: "M PLUS Rounded 1c";
 	letter-spacing: 1px;
@@ -193,8 +193,8 @@ p{
 	outline: none;
 }
 .alcohol-number {
-	font-size:2.2vh;
-	padding: 1vh 1vw;
+	font-size:16px;
+	padding: 8px 4px;
 	transition: 0.4s;
 	border: 1px solid white;
 	--	background: transparent;
@@ -209,7 +209,7 @@ p{
 	height: 1.5px;
 	content: '';
 	transition: 0.6s;
-	background-color: #fff6a9;
+	background-color: #FFFF66;
 
 }
 .alcohol-number ~ .focus_line:after {
@@ -225,7 +225,7 @@ p{
 	height: 0;
 	content: '';
 	transition: 0.8s;
-	background-color: #fff6a9;
+	background-color: #FFFF66;
 }
 .alcohol-number ~ .focus_line i:after {
 	right: 0;
@@ -263,8 +263,60 @@ p{
 	display:flex;
 	
 }
-#btn1{
+button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+}
+}
+.bottleCupBox{
+	position: relative;
+}
+
+.bottleCup{
+	position:absolute;
+	width:68px;
+	height:68px;
+	background-color:#DDDDDD;
 	margin-right:10px;
+	border-radius:50%;
+}
+/*.bottleAround{
+	position:absolute;
+	margin-top:6px;
+	width:12px;
+	height:12px;
+	background-color:black;
+	margin-right:10px;
+	border-radius:50%;
+}*/
+#btn1{
+	padding:6px 12px;
+	font-weight: bold;
+	width:65px;
+	background-color:#663333;
+	color:white;
+	margin-right:10px;
+	font-size:16px;
+	font-family: "M PLUS Rounded 1c";
+	border-radius:50%;
+}
+#btn2{
+	padding:6px 12px;
+font-weight: bold;
+	width:65px;
+	font-size:16px;
+	background-color:#663333;
+	color:white;
+	font-family: "M PLUS Rounded 1c";
+	border-radius:50%;
+}
+
+canvas{
+
 }
 
 .alchol{
@@ -440,3 +492,4 @@ p{
 	margin-top:16px;
 	margin-left:8px;
 }
+

@@ -7,6 +7,7 @@ window.onload=()=>{
 	const btn2=document.getElementById('btn2');
 	const result=document.getElementById('result');
 	const waterColor=document.getElementById('waterColor');
+	const cup=document.getElementById('cup');
 	let alcohol=0;
 	let degree=0;
 	let water=0;
@@ -16,6 +17,21 @@ window.onload=()=>{
 	let b=165;
 	let wave=8;
 	let cCode="#f2e6a0";
+	let mt=0;
+	let mr=0;
+for(let i=0;i<10;i++){
+	const elem=document.createElement('div');
+	elem.style.position="absolute";
+	elem.style.marginTop=mt+"px";
+	elem.style.marginRight=mr+"10px";
+	elem.style.width="12px";
+	elem.style.height="12px";
+	elem.style.backgroundColor="black";
+	elem.style.borderRadius="50%";
+	cup.appendChild(elem);
+	mt+=3;
+	mr+=5;
+	}
 	
 	function waterWave(){
 			wave=8;
