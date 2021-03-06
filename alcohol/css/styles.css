@@ -67,9 +67,75 @@ h1 {
     color: #fff6a9;
   }
 }
+
+.glass{
+	position:relative;
+}
+.glassEdge{
+	position: absolute;
+	left:2.5px;
+	margin-top:-6px;
+	width:115px;
+	height:16px;
+	background-color: #a9d8e6;
+	border-radius: 50%;
+	
+}
+.triangle{
+	position:absolute;
+	width: 0;
+ 	height: 0;
+  	border-left: 60px solid transparent;
+  	border-right: 60px solid transparent;
+	border-bottom: 70px solid transparent;
+  	border-top: 70px solid #a9d8e6;
+	border-radius:10px;
+}
+.triangle2{
+	position:absolute;
+	left:-14px;
+	top:-99px;
+	font-size:154px;
+	color:#a9d8e6;
+	text-shadow: 0 0 5px #a9d8e6, 0 0 15px #a9d8e6, -5px 5px 20px #a9d8e6, 0 0 60px #a9d8e6;
+}
+.handle{
+	position: absolute;
+	margin-left:56px;
+	margin-top:56px;
+	background-color:#a9d8e6;
+	width:8px;
+	height:98px;
+	border-radius:10px 10px 10px 10px;
+	
+}
+.glassBottom{
+	position: absolute;
+	left:30px;
+	margin-top:142px;
+	width:60px;
+	height:12px;
+	background-color: #a9d8e6;
+	border-radius: 50%;
+}
+liquid{
+	
+}
+.glassBottom2{
+	position: absolute;
+	left:30px;
+	margin-top:145px;
+	width:60px;
+	height:9px;
+	background-color: #a9d8e6;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #a9d8e6, 0 0 15px #a9d8e6, -5px 5px 20px #a9d8e6, 0 0 60px #a9d8e6;
+}
+.
 .cPrent{
 	position: relative;
 	margin-right:150px;
+ 	
 }
 .circle{
 	margin-top:-38px;
@@ -82,6 +148,7 @@ h1 {
 	text-shadow:  0 0 30px #00ECFF;
 	animation: blink 12s infinite;
   -webkit-animation: blink2 10s infinite;
+	 
 }
 
 .empty1{
@@ -159,10 +226,10 @@ h2{
 	margin-top:11px;
 }
 .alcoholtitle1{
-	margin-top:5px;
+	margin-top:6px;
 }
 .title{
-	font-size:17px;
+	font-size:15px;
 	margin-right:18px;
 	color:white;
 	font-family: "M PLUS Rounded 1c";
@@ -195,6 +262,7 @@ p{
 }
 .alcohol-number {
 	font-size:16px;
+	width:88px;
 	padding: 8px 4px;
 	transition: 0.4s;
 	border: 1px solid white;
@@ -401,11 +469,9 @@ canvas{
 	background-color:#a9d8e6;
 	width:58px;
 	height:20px;
-
 	border-radius: 50%;
 }
 .alcoholImgC{
-	
 	position: absolute;
 	margin-top:10px;
 	margin-left:1.5px;
@@ -464,7 +530,6 @@ canvas{
 	margin-left:7px;
 	width: 50px;
 	border-top: 55px solid #f2e6a0;
-	
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 	height: 0;
