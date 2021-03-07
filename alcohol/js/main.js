@@ -60,6 +60,10 @@ window.onload=()=>{
 		}
 	}
 	
+	
+
+	
+	
 	function waterWave(){
 		wave=8;
 		var unit = 13,
@@ -121,6 +125,13 @@ window.onload=()=>{
 	init();
 	}
 	waterWave();
+	
+	
+	
+	
+	
+	
+	
 	
 	function alcoholCalc(){
 		alcohol=parseFloat(entry1.value);
