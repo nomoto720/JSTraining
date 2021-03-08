@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lobster&family=Monoton&family=Open+Sans&family=Stick&display=swap');
 body{
 	background-color:#000033;
+--	background-image:
+--	 radial-gradient(#000055 1px, transparent 1px);
+--	background-size: 20px 20px;
+
 }
 #container{
 --display: grid;
@@ -10,6 +14,7 @@ body{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+
 }
 
 h1 {
@@ -67,7 +72,9 @@ h1 {
   }
 }
 .topPage{
-	background-color:#092046;
+	width:100vw;
+	height:100vh;
+	background-size:cover;
 }
 .glassBox{
 	position: relative;
@@ -414,16 +421,16 @@ h1 {
 }
 
 .empty1{
-	margin-top:280px;
+	margin-top:310px;
 }
 
 .cPrent{
 	position: relative;
-	margin-right:150px;
+	margin-left:20px;
 }
 .circle{
 	position: absolute;
-	margin-top:-42px;
+	margin-top:-32px;
 	font-size:148px;
 	font-weight: lighter;
 	font-family: sans-serif;
@@ -495,7 +502,7 @@ h2{
 
 
 .empty{
-	margin-top:60px;
+	margin-top:20px;
 }
 
 
@@ -514,11 +521,13 @@ h2{
 	letter-spacing: 3px;
 }
 p{
-	font-size:2.2vh;
+	font-size:16px;
 	color:white;
 	font-family: "M PLUS Rounded 1c";
-	text-align: right;
-	letter-spacing: 1px;
+	text-align:right;
+	letter-spacing: 3px;
+	margin-top:0;
+    margin-bottom:0;
 }
 
 
@@ -718,15 +727,31 @@ button{
 	font-size:15px;
 }
 .yohaku{
-	margin-top:60px;
-}
-canvas{
+	margin-top:80px;
 }
 
+.resultBox{
+	display:flex;
+	justify-content:space-between;
+
+}
+.results{
+	margin-top:16px;
+	margin-left:30px;
+}
+.resultNum{
+	font-size:30px;
+	font-weight: bold;
+	color:#FF3399;
+	text-shadow:  0 0 30px #00ECFF;
+	animation: blink 12s infinite;
+  -webkit-animation: blink2 10s infinite;	 
+
+}
 .alchol{
 	position: relative;
 	margin-top:5%;
-	margin-right:80px;
+	margin-right:60px;
 	
 }
 .alcoholImgA{
@@ -893,4 +918,3 @@ canvas{
 	margin-top:16px;
 	margin-left:8px;
 }
-

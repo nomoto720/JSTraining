@@ -5,6 +5,7 @@ window.onload=()=>{
 	const entry3=document.getElementById('entry3');
 	const btn1=document.getElementById('btn1');
 	const btn2=document.getElementById('btn2');
+	const result1=document.getElementById('result1');
 	const result=document.getElementById('result');
 	const waterColor=document.getElementById('waterColor');
 	const cup=document.getElementById('cup');
@@ -13,6 +14,7 @@ window.onload=()=>{
 	let degree=0;
 	let water=0;
 	let degree2=0;
+	let mizuwari=0;
 	let r=242;
 	let g=235;
 	let b=165;
@@ -141,6 +143,7 @@ window.onload=()=>{
 		degree2=(degree*alcohol)/(alcohol+water)*100;
 		degree2=degree2.toFixed(1);
 		colorChange();
+		mizuwari=alcohol+water;
 		//if(wave>=35){ waterWave(); }
 	}
 	function hex(num){
@@ -169,7 +172,9 @@ window.onload=()=>{
 	
 
 	btn1.addEventListener('click',()=>{
-		let msg=`アルコール度数は${degree2}度です`;
+		let msg1=`水割りの量<span class="resultNum">${mizuwari}</span>ml`;
+		let msg=`アルコール度数<span class="resultNum">${degree2}</span>度`;
+		result1.innerHTML=msg1;
 		result.innerHTML=msg;
 
 	});
@@ -178,6 +183,8 @@ window.onload=()=>{
 		entry2.value='';
 		entry3.value='';
 		degree2=0;
+		mizuwari=0;
+		result1.textContent='';
 		result.textContent='';
 	});
 
