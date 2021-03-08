@@ -1,26 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lobster&family=Monoton&family=Open+Sans&family=Stick&display=swap');
 body{
-	background-color:#000033;
 --	background-image:
 --	 radial-gradient(#000055 1px, transparent 1px);
---	background-size: 20px 20px;
+	--	background-size: 20px 20px;
+	background-image: url(../images/c.jpg);  
 
 }
 #container{
+	margin: 0px;
+    padding: 0px;
 --display: grid;
 -- justify-content: center;
- -- margin: auto;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+	width:100%;
+}
 
+.topPage{
+	margin: 0px;
+    padding: 0px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:100vw;
+	height:100vh;
+	background-image: url(../images/neon8.jpg);  
+	background-size:cover;
 }
 
 h1 {
 	font-size: 10vw;
 	line-height: 14vw;
-	text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 58px #ff0000;
+	text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 58px #ff0000,0 0 68px #ff0000;
 	color: #fff6a9;
 	font-family: "Monoton", cursive;
 	text-align: center;
@@ -71,16 +84,12 @@ h1 {
     color: #fff6a9;
   }
 }
-.topPage{
-	width:100vw;
-	height:100vh;
-	background-size:cover;
-}
+
 .glassBox{
 	position: relative;
 	margin:auto;
 	padding-right:145px;
-	margin-top:50px;
+	margin-top:-100px;
 }
 
 #sineCanvas1{
@@ -337,7 +346,7 @@ h1 {
 	height:10px;
 	background-color: #a9d8e6;
 	border-radius: 50%;
-	box-shadow: 0 0 5px #a9d8e6, 0 0 15px #a9d8e6,  0 0 60px #a9d8e6;
+	box-shadow: 0 0 5px #a9d8e6, 0 0 15px #a9d8e6, 0 0 20px #a9d8e6,0 0 40px #a9d8e6, 0 0 60px #a9d8e6;
 }
 .triangle{
 	position:absolute;
@@ -355,7 +364,7 @@ h1 {
 	top:-5px;
 	font-size:70px;
 	color:#a9d8e6;
-	text-shadow: 0 0 5px #a9d8e6, 0 0 15px #a9d8e6, 0 0 40px #a9d8e6,0 0 50px #a9d8e6, 0 0 60px #a9d8e6;
+	text-shadow: 0 0 5px #a9d8e6, 0 0 15px #a9d8e6, 0 0 40px #a9d8e6,0 0 50px #a9d8e6, 0 0 60px #a9d8e6,0 0 70px #a9d8e6;
 
 }
 .handle{
@@ -366,6 +375,7 @@ h1 {
 	width:9px;
 	height:115px;
 	border-radius:10px 10px 10px 10px;
+	box-shadow: 0 0 5px #a9d8e6;
 	
 }
 .glassBottom{
@@ -408,6 +418,7 @@ h1 {
 	height:26px;
 	border-radius: 55%;
 	background-color:#fecc46;
+	box-shadow: 0 0 5px #fecc46;
 }
 .glassBottom2{
 	position: absolute;
@@ -420,8 +431,19 @@ h1 {
 	box-shadow: 0 0 5px #a9d8e6, 0 0 15px #a9d8e6, -5px 5px 20px #a9d8e6, 0 0 60px #a9d8e6;
 }
 
+
+.alcoholDegree{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	background-color:#000022;
+	width:85%;
+	height:750px;
+}
+
+
 .empty1{
-	margin-top:310px;
+	margin-top:60px;
 }
 
 .cPrent{
@@ -430,8 +452,8 @@ h1 {
 }
 .circle{
 	position: absolute;
-	margin-top:-32px;
-	font-size:148px;
+	margin-top:-35px;
+	font-size:150px;
 	font-weight: lighter;
 	font-family: sans-serif;
 	display: block;
@@ -508,7 +530,7 @@ h2{
 
 .alcoholbox1{
 	display:flex;
-	margin-top:11px;
+	margin-top:21px;
 }
 .alcoholtitle1{
 	margin-top:6px;
