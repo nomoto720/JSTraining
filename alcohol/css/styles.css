@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lobster&family=Monoton&family=Open+Sans&family=Stick&display=swap');
+
+
 body{
+	margin: 0px;
+	padding: 0px;
 --	background-image:
 --	 radial-gradient(#000055 1px, transparent 1px);
 	--	background-size: 20px 20px;
