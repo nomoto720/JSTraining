@@ -35,11 +35,10 @@ body{
 	background-size:cover;
 }
 .titleTop{
-
 	display:flex;
 	flex-direction:row-reverse;
-justify-content:space-around;
-
+	justify-content:space-around;
+	flex-wrap:wrap;
 }
 h1 {
 	margin:0;
@@ -458,20 +457,19 @@ h1 {
 }
 
 .alcoholDgreeTitle{
- display:flex;
-justify-content:space-around;;
-flex-wrap:wrap;
-
+	display:flex;
+	justify-content:space-around;;
+	flex-wrap:wrap;
 }
 .titleAD1{
 	position:relative;
-	width:190px;
+	width:196px;
 	height:150px;
 }
 .titleAD2{
 	position:relative;
 	height:150px;
-	width:255px;
+	width:270px;
 }
 
 .circle{
