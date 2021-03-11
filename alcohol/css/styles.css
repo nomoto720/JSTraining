@@ -5,7 +5,7 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	background-image: url(../images/neon8.jpg);  
+	background-image: url(../images/neon1.jpg);  
 	background-repeat: repeat;
 }
 #container{
@@ -28,7 +28,7 @@ body{
 	align-items:center;
 	width:100vw;
 	height:100vh;
-	background-image: url(../images/neon8.jpg);  
+	background-image: url(../images/neon1.jpg);  
 	background-size:cover;
 }
 .titleTop{
@@ -446,10 +446,10 @@ h1 {
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	background-color:#000022;
---	background-image: url(../images/1466789609.jpg);
+	--background-color:#000022;
+	background-image: url(../images/back1.jpg);
 	background-size:cover;
-	width:85%;
+	width:100%;
 	height:100%;
 }
 
