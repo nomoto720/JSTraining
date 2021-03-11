@@ -5,11 +5,8 @@
 body{
 	margin: 0px;
 	padding: 0px;
---	background-image:
---	 radial-gradient(#000055 1px, transparent 1px);
-	--	background-size: 20px 20px;
-	background-image: url(../images/c.jpg);  
-
+	background-image: url(../images/neon8.jpg);  
+	background-repeat: repeat;
 }
 #container{
 	margin: 0px;
@@ -450,6 +447,8 @@ h1 {
 	flex-direction:column;
 	align-items:center;
 	background-color:#000022;
+--	background-image: url(../images/1466789609.jpg);
+	background-size:cover;
 	width:85%;
 	height:100%;
 }
@@ -808,6 +807,19 @@ button{
   -webkit-animation: blink2 10s infinite;	 
 
 }
+
+.bloodAlcoholCacl{
+	background-image:url(../images/morning.jpg);
+	background-size:cover;
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+
 .alchol{
 	position: relative;
 	margin-top:5%;
