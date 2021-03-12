@@ -3,10 +3,25 @@ window.onload=()=>{
 	const entry1=document.getElementById('entry1');
 	const entry2=document.getElementById('entry2');
 	const entry3=document.getElementById('entry3');
+
+	const entry4=document.getElementById('entry4');
+	const entry5=document.getElementById('entry5');
+	const entry6=document.getElementById('entry6');
+	const entry7=document.getElementById('entry7');
+	const entry8=document.getElementById('entry8');
+	const entry9=document.getElementById('entry9');
+	const entry10=document.getElementById('entry10');
+	const entry11=document.getElementById('entry11');
+	const entry12=document.getElementById('entry12');
+
 	const btn1=document.getElementById('btn1');
 	const btn2=document.getElementById('btn2');
-	const result1=document.getElementById('result1');
+
+	const btn3=document.getElementById('btn3');
+	const btn4=document.getElementById('btn4');
 	const result=document.getElementById('result');
+	const result1=document.getElementById('result1');
+	const result2=document.getElementById('result2');	
 	const waterColor=document.getElementById('waterColor');
 	const cup=document.getElementById('cup');
 	const cup2=document.getElementById('cup2');
@@ -20,6 +35,17 @@ window.onload=()=>{
 	let b=165;
 	let wave=8;
 	let cCode="#f2e6a0";
+
+	let weight=0;
+	let beer=0;
+	let highball=0;
+	let wine=0;
+	let sake=0;
+	let shochu=0;
+	let whiskey=0;
+	let otherAlcohol=0;
+	let otherNum=0;
+	let bloodCon=0;
 	
 	
 	let mr=-4;
@@ -63,7 +89,7 @@ window.onload=()=>{
 	}
 	
 	
-
+	
 	
 	
 	function waterWave(){
@@ -130,11 +156,6 @@ window.onload=()=>{
 	
 	
 	
-	
-	
-	
-	
-	
 	function alcoholCalc(){
 		alcohol=parseFloat(entry1.value);
 		degree=parseFloat(entry2.value);
@@ -187,5 +208,21 @@ window.onload=()=>{
 		result1.textContent='';
 		result.textContent='';
 	});
+
+	function alcoholBlood(){
+		weight=parseFloat(entry4.value);
+		beer=parseFloat(entry5.value);
+		highball=parseFloat(entry6.value);
+		wine=parseFloat(entry7.value);
+		sake=parseFloat(entry8.value);
+		shochu=parseFloat(entry9.value);
+		whiskey=parseFloat(entry10.value);
+		otherAlcohol=parseFloat(entry11.value);
+		otherNum=parseFloat(entry12.value);
+		
+		
+		
+		bloodCon
+	}
 
 }

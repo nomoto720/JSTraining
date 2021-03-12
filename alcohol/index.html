@@ -125,15 +125,102 @@
 <section>
 </section>
 <section class="bloodAlcoholCacl">
-<div>ビール,チューハイなど (1缶=350ml) 5%</div>
-<div>ビール,チューハイなど(1缶=500ml) 5%</div>
-<div>ハイボールなど(1缶=350ml) 7%</div>
-<div>ハイボールなど(1缶=500ml) 7%</div>
-<div>ワインなど(1杯=120ml) 12%</div>
-<div>日本酒など(1合=180ml) 15%</div>
-<div>焼酎など(1杯=100ml) 25%</div>
-<div>ウイスキー,ブランデーなど(1杯=30ml) 40%</div>
-<div>その他</div>
+	<div>血中アルコール濃度計算機</div>
+	<div>酔っ払い度判定</div>
+	<div class="alcoholbox1">
+		<div class="alcoholtitle1"><span>体重（kg）</span></div>
+		<div class="alcohol-wrap">
+			<input type="number" class="alcohol-number" id="entry4" min="1" value="0" >
+			<span class="focus_line"><i></i></span>
+		</div>
+	</div>
+
+	<table>
+		<tr>
+			<th>飲んだお酒</th>
+			<th>アルコール度数</th>
+			<th>飲酒量(ml)</th>
+		</tr>
+		<tr>
+			<td>ビール,チューハイなど</td>
+			<td>5%</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry5" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>ハイボールなど</td>
+			<td>7%</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry6" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>ワインなど</td>
+			<td>12%</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry7" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>日本酒など</td>
+			<td>15%</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry8" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>焼酎など</td>
+			<td>25%</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry9" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>ウイスキー・ブランデーなど</td>
+			<td>40%</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry10" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>その他</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry11" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="alcohol-number" id="entry12" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<button id="btn3">判定</button>
+	<button id="btn4">クリア</button>
+	<div id="result2"></div>
+	
 </section>
 
 <!--	<div class="alchol2">
