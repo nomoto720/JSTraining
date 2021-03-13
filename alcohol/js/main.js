@@ -219,10 +219,27 @@ window.onload=()=>{
 		whiskey=parseFloat(entry10.value);
 		otherAlcohol=parseFloat(entry11.value);
 		otherNum=parseFloat(entry12.value);
-		
-		
-		
-		bloodCon
-	}
 
+		let pureAlcohol=(beer*0.05)+(highball*0.07)+(wine*0.12)+(sake*0.15)+(shochu*0.25)+(whiskey*0.40)+(otherNum*(otherAlcohol/100));
+		bloodCon=pureAlcohol/(833*weight)*100;
+	}
+	btn3.addEventListener('click',()=>{
+		alcoholBlood();
+		resultBC=Math.round(bloodCon*Math.pow(10,2))/Math.pow(10,2);
+		let drunk;
+		if(resultBC<0.05){
+			drunk="爽快期";
+		}else if(resultBC<0.10){
+			drunk="ほろ酔い期";
+		}else if(resultBC<0.15){
+			drunk="酩酊初期";
+		}else if(resultBC<0.30){
+			drunk="酩酊期";
+		}else if(resultBC<0.40){
+			drunk="泥酔期";
+		}else{
+			drunk="昏睡期";
+		}
+		result2.innerHTML="アルコール血中濃度:"+resultBC+"<br>酔いの程度:"+drunk;
+	});
 }
