@@ -242,4 +242,16 @@ window.onload=()=>{
 		}
 		result2.innerHTML="アルコール血中濃度:"+resultBC+"<br>酔いの程度:"+drunk;
 	});
+	btn4.addEventListener('click',()=>{
+		entry4.value=0;
+		entry5.value=0;
+		entry6.value=0;
+		entry7.value=0;
+		entry8.value=0;
+		entry9.value=0;
+		entry10.value=0;
+		entry11.value=0;
+		entry12.value=0;
+		result2.textContent="";
+	});
 }

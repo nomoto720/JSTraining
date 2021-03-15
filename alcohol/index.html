@@ -57,7 +57,7 @@
 		<div class="alcoholDgreeTitle">	
 			<div class="titleAD1">		
 				<div class="circle">◯</div>
-				<h2 >水割り<br>アルコール度数<br>計算機</h2>
+				<h2 class="adTitle">水割り<br>アルコール度数<br>計算機</h2>
 			</div>
 			<div class="titleAD2"><h3>Alcohol Degree</h3></div>
 		</div>
@@ -125,98 +125,91 @@
 <section>
 </section>
 <section class="bloodAlcoholCacl">
-	<div>血中アルコール濃度計算機</div>
-	<div>酔っ払い度判定</div>
+<div class="alcoholDgreeTitle">	
+			<div class="titleAD1">		
+				<div class="circle">◯</div>
+				<h2 class="bacTitle">血中<br>アルコール濃度<br>計算機</h2>
+			</div>
+			<div class="titleAD2"><h3>酔っ払い度判定</h3></div>
+		</div>
 	<div class="alcoholbox1">
 		<div class="alcoholtitle1"><span>体重（kg）</span></div>
 		<div class="alcohol-wrap">
-			<input type="number" class="alcohol-number" id="entry4" min="1" value="0" >
-			<span class="focus_line"><i></i></span>
+			<input type="number" class="bloodAlcoholNum" id="entry4" min="1" value="0" >
 		</div>
 	</div>
 
 	<table>
 		<tr>
 			<th>飲んだお酒</th>
-			<th>アルコール度数</th>
 			<th>飲酒量(ml)</th>
 		</tr>
 		<tr>
-			<td>ビール,チューハイなど</td>
-			<td>5%</td>
+			<td>ビール,チューハイ(5%)</td>
 			<td>
 				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry5" min="1" value="0" >
+					<input type="number" class="bloodAlcoholNum" id="entry5" min="1" value="0" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>ハイボール(7%)</td>
+			<td>
+				<div class="alcohol-wrap">
+					<input type="number" class="bloodAlcoholNum" id="entry6" min="1" value="0" >
 					<span class="focus_line"><i></i></span>
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td>ハイボールなど</td>
-			<td>7%</td>
+			<td>ワイン(12%)</td>
 			<td>
 				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry6" min="1" value="0" >
+					<input type="number" class="bloodAlcoholNum" id="entry7" min="1" value="0" >
 					<span class="focus_line"><i></i></span>
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td>ワインなど</td>
-			<td>12%</td>
+			<td>日本酒(15%)</td>
 			<td>
 				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry7" min="1" value="0" >
+					<input type="number" class="bloodAlcoholNum" id="entry8" min="1" value="0" >
 					<span class="focus_line"><i></i></span>
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td>日本酒など</td>
-			<td>15%</td>
+			<td>焼酎(25)%</td>
 			<td>
 				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry8" min="1" value="0" >
+					<input type="number" class="bloodAlcoholNum" id="entry9" min="1" value="0" >
 					<span class="focus_line"><i></i></span>
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td>焼酎など</td>
-			<td>25%</td>
+			<td>ウイスキーなど(40%)</td>
 			<td>
 				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry9" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>ウイスキー・ブランデーなど</td>
-			<td>40%</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry10" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>その他</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry11" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="alcohol-number" id="entry12" min="1" value="0" >
+					<input type="number" class="bloodAlcoholNum" id="entry10" min="1" value="0" >
 					<span class="focus_line"><i></i></span>
 				</div>
 			</td>
 		</tr>
 	</table>
+
+その他のお酒
+
+				<div class="alcohol-wrap">
+					<input type="number" class="bloodAlcoholNum" id="entry11" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
+
+				<div class="alcohol-wrap">
+					<input type="number" class="bloodAlcoholNum" id="entry12" min="1" value="0" >
+					<span class="focus_line"><i></i></span>
+				</div>
 	<button id="btn3">判定</button>
 	<button id="btn4">クリア</button>
 	<div id="result2"></div>

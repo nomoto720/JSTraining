@@ -489,7 +489,7 @@ h1 {
   -webkit-animation: blink2 10s infinite;	 
 }
 
-h2{
+h2.adTitle{
 	position: absolute;
 	font-family: "M PLUS Rounded 1c";
 	font-size: 25px;
@@ -914,6 +914,39 @@ button{
 }
 
 
+h2.bacTitle{
+	position: absolute;
+	font-family: "M PLUS Rounded 1c";
+	font-size: 25px;
+	line-height: 33px;
+	letter-spacing: 2px;
+	font-weight:900; 
+	transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+    color: #220000;
+	 text-align: center;
+
+}
+
+.bloodAlcoholNum{
+	font-size:16px;
+	width:80px;
+	padding: 8px 4px;
+	transition: 0.4s;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+.alcohol-wrap input[type='numeber'] {
+	font: 2vh sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.alcohol-wrap input[type='number']:focus {
+	outline: none;
+}
 
 .alchol2{
 	position: relative;
