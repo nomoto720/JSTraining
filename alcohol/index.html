@@ -124,95 +124,58 @@
 </section>
 <section>
 </section>
-<section class="bloodAlcoholCacl">
-<div class="alcoholDgreeTitle">	
-			<div class="titleAD1">		
-				<div class="circle">◯</div>
-				<h2 class="bacTitle">血中<br>アルコール濃度<br>計算機</h2>
-			</div>
-			<div class="titleAD2"><h3>酔っ払い度判定</h3></div>
-		</div>
-	<div class="alcoholbox1">
-		<div class="alcoholtitle1"><span>体重（kg）</span></div>
-		<div class="alcohol-wrap">
-			<input type="number" class="bloodAlcoholNum" id="entry4" min="1" value="0" >
-		</div>
+<section class="bloodAlcoholCacl">	
+	<div class="bacTitle">
+		<p class="subTitle1">機器名</p><h2 class="bacTitle1">血中アルコール濃度計算機</h2>
 	</div>
-
-	<table>
-		<tr>
-			<th>飲んだお酒</th>
-			<th>飲酒量(ml)</th>
-		</tr>
-		<tr>
-			<td>ビール,チューハイ(5%)</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="bloodAlcoholNum" id="entry5" min="1" value="0" >
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>ハイボール(7%)</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="bloodAlcoholNum" id="entry6" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>ワイン(12%)</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="bloodAlcoholNum" id="entry7" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>日本酒(15%)</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="bloodAlcoholNum" id="entry8" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>焼酎(25)%</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="bloodAlcoholNum" id="entry9" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>ウイスキーなど(40%)</td>
-			<td>
-				<div class="alcohol-wrap">
-					<input type="number" class="bloodAlcoholNum" id="entry10" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-			</td>
-		</tr>
-	</table>
-
-その他のお酒
-
-				<div class="alcohol-wrap">
-					<input type="number" class="bloodAlcoholNum" id="entry11" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-
-				<div class="alcohol-wrap">
-					<input type="number" class="bloodAlcoholNum" id="entry12" min="1" value="0" >
-					<span class="focus_line"><i></i></span>
-				</div>
-	<button id="btn3">判定</button>
-	<button id="btn4">クリア</button>
+	<div class="bacTitleSub">
+		<p class="subTitle2">副　題</p><div class="bacTitle2">酔っ払い度判定</div>				
+	</div>				
+	<div class="abcbox1">
+		<p class="subTitle2">体　重</p>
+		<div class="alcohol-wrap"><input type="number" class="bloodAlcoholNum" id="entry4" min="1" value="0" ></div>
+		<p class="abcNum">(kg)</p>
+	</div>
+	<div class="sakeNameNum">
+		<span class="smallFont rightSpace">飲んだお酒</span>
+		<span class="smallFont">飲酒量</span>
+	</div>
+		<div class="abcBox2">
+			<p class="abcBox2left">ビール・チューハイ<span class="smallFont">（5%）</span></p>
+			<div class="alcohol-wrap"><input type="number" class="bloodAlcoholNum" id="entry5" min="1" value="0" ><span class="smallFont">(ml)</span></div>	
+		<div>
+	<div class="abcbox3">
+		<p class="abcBox3left">ハイボール<span class="smallFont">（7%）</span></p>
+		<div class="alcohol-wrap"><input type="number" class="bloodAlcoholNum" id="entry6" min="1" value="0" ><span class="smallFont">(ml)</span></div>
+	</div>
+	<div class="abcbox4">
+		<p class="abcBox4left">ワイン<span class="smallFont">（12%）</span></p>
+		<div class="alcohol-wrap"><input type="number" class="bloodAlcoholNum" id="entry7" min="1" value="0" ><span class="smallFont">(ml)</span></div>
+	</div>
+	<div class="abcbox4">
+		<p class="abcBox4left">日本酒<span class="smallFont">（15%）</span></p>
+		<div class="alcohol-wrap"><input type="number" class="bloodAlcoholNum" id="entry8" min="1" value="0" ><span class="smallFont">(ml)</span></div>
+	</div>
+	<div class="abcbox4">
+		<p class="abcBox4left">焼　酎<span class="smallFont">（25%）</span></p>
+		<div class="alcohol-wrap"><input type="number" class="bloodAlcoholNum" id="entry9" min="1" value="0" ><span class="smallFont">(ml)</span></div>
+	</div>
+	<div class="abcbox4">
+		<p class="abcBox5left">ウイスキーなど<span class="smallFont">（40%）</span></p>
+		<div class="alcohol-wrap"><input type="number" class="bloodAlcoholNum" id="entry10" min="1" value="0" ><span class="smallFont">(ml)</span></div>
+	</div>
+	<div class="abcbox4">
+		<p class="abcBox6left">その他お酒</p>
+		<div class="alcohol-wrap"><input type="number" class="bloodAlcoholNum" id="entry11" min="1" value="0" ><span class="smallFont">(%)</span></div>
+<div class="alcohol-wrap"><input type="number" class="leftSize bloodAlcoholNum" id="entry12" min="1" value="0" ><span class="smallFont">(ml)</span></div>
+	</div>
+	<div class="abcbox4">
+		<button id="btn3">判定</button>
+		<button id="btn4">クリア</button>
+	</div>
+<div class="abcbox4">
 	<div id="result2"></div>
+</div>
 	
 </section>
 
