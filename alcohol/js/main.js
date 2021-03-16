@@ -19,9 +19,15 @@ window.onload=()=>{
 
 	const btn3=document.getElementById('btn3');
 	const btn4=document.getElementById('btn4');
+	
 	const result=document.getElementById('result');
 	const result1=document.getElementById('result1');
-	const result2=document.getElementById('result2');	
+	const result2=document.getElementById('result2');
+	const result3=document.getElementById('result3');
+	const result4=document.getElementById('result4');
+	const result5=document.getElementById('result5');
+	const bacBox7=document.getElementById('bacBox7');
+	const bacBox8=document.getElementById('bacBox8');	
 	const waterColor=document.getElementById('waterColor');
 	const cup=document.getElementById('cup');
 	const cup2=document.getElementById('cup2');
@@ -193,8 +199,8 @@ window.onload=()=>{
 	
 
 	btn1.addEventListener('click',()=>{
-		let msg1=`水割りの量<span class="resultNum">${mizuwari}</span>ml`;
-		let msg=`アルコール度数<span class="resultNum">${degree2}</span>度`;
+		let msg1=`水割りの量 <span class="resultNum">${mizuwari}</span> ml`;
+		let msg=`アルコール度数 <span class="resultNum">${degree2}</span> 度`;
 		result1.innerHTML=msg1;
 		result.innerHTML=msg;
 
@@ -240,7 +246,14 @@ window.onload=()=>{
 		}else{
 			drunk="昏睡期";
 		}
-		result2.innerHTML="アルコール血中濃度:"+resultBC+"<br>酔いの程度:"+drunk;
+		result2.innerHTML="アルコール血中濃度";
+		result3.innerHTML=resultBC+"%";
+		result4.innerHTML="酔いの程度";
+		result5.innerHTML=drunk;
+		btn4.innerHTML="<span class='smallFont2 result6'>クリア</span>ここをクリック";
+		bacBox7.style.marginTop="40px";
+		bacBox8.style.marginTop="40px";
+		bacBox8.style.marginBottom="40px";
 	});
 	btn4.addEventListener('click',()=>{
 		entry4.value=0;
@@ -253,5 +266,12 @@ window.onload=()=>{
 		entry11.value=0;
 		entry12.value=0;
 		result2.textContent="";
+		result3.textContent="";
+		result4.textContent="";
+		result5.textContent="";
+		btn4.textContent="";
+		bacBox7.style.marginTop="";
+		bacBox8.style.marginTop="";
+		bacBox8.style.marginBottom="";
 	});
 }
