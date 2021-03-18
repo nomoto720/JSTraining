@@ -51,15 +51,16 @@ body{
 h1 {
 	margin:0;
 	margin-bottom:20px;
-	font-size: 85px;
+	font-size: 75px;
 	line-height: 110px;
 	text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 58px #ff0000,0 0 68px #ff0000;
 	color: #fff6a9;
 	font-family: "Monoton", cursive;
-	text-align: left;
+	text-align:left;
 	animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
 }
+
 
 @-webkit-keyframes blink {
   20%,
@@ -822,10 +823,19 @@ button{
 	z-index:1;
 	width:100%;
 	height:100%;
-		display:flex;
+	display:flex;
 	flex-direction:column;
 	align-items:center;
+	margin-top:-1px;
 }
+.drunkGameFrame{
+	margin:40px auto;
+}
+.gameBox{
+	width:100px;
+	height:100px;
+}
+
 .bloodAlcoholCacl{
 	background-image:url(../images/morning.jpg);
 	background-size:cover;
@@ -931,6 +941,387 @@ button{
 	border-radius:10px 10px 27px 27px;
 	/*opacity:0.9;*/
 }
+
+
+
+#switch {
+  display: none;
+}
+#switch ~ .container2 > .screen {
+  -webkit-animation: turn-off 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+          animation: turn-off 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#switch:checked + .switch-label:before {
+  border-color: #063;
+  background: #2f9;
+}
+#switch:checked + .switch-label:after {
+  content: "off";
+}
+#switch:checked ~ .container2 > .screen {
+  -webkit-animation: turn-on 4s linear;
+          animation: turn-on 4s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#switch:checked ~ .container2:after {
+  -webkit-animation: flicker 0.15s infinite;
+          animation: flicker 0.15s infinite;
+}
+#switch:checked ~ .container2 .overlay {
+  -webkit-animation: overlay-anim 5s linear;
+          animation: overlay-anim 5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.switch-label {
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  color: #eee;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 2px;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.switch-label:after {
+  content: "on";
+}
+.switch-label:before {
+  content: " ";
+  display: inline-block;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #003321;
+  margin-right: 10px;
+  border: 1px solid #111;
+}
+.switch-label:active {
+  box-shadow: none;
+  transform: translate3d(0, 2px, 0);
+}
+
+.container2 {
+  background: #121010;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #666;
+width:700px;
+height:525px;
+
+}
+.container2:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.container2:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+	
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  border: none;
+background-image:url(../images/morning.jpg);
+}
+.screen .glitch {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.overlay {
+  color: #e4c955;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  font-size: 20px;
+  font-size: 5.3333333333vw;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0.9729215229;
+  }
+  5% {
+    opacity: 0.5634987641;
+  }
+  10% {
+    opacity: 0.6478835105;
+  }
+  15% {
+    opacity: 0.0398576556;
+  }
+  20% {
+    opacity: 0.2821987755;
+  }
+  25% {
+    opacity: 0.3784012957;
+  }
+  30% {
+    opacity: 0.5325753245;
+  }
+  35% {
+    opacity: 0.5749468187;
+  }
+  40% {
+    opacity: 0.2007240244;
+  }
+  45% {
+    opacity: 0.836784418;
+  }
+  50% {
+    opacity: 0.5355555323;
+  }
+  55% {
+    opacity: 0.3845538187;
+  }
+  60% {
+    opacity: 0.8462164643;
+  }
+  65% {
+    opacity: 0.2913969682;
+  }
+  70% {
+    opacity: 0.7827541057;
+  }
+  75% {
+    opacity: 0.5548688234;
+  }
+  80% {
+    opacity: 0.9163713069;
+  }
+  85% {
+    opacity: 0.8960558781;
+  }
+  90% {
+    opacity: 0.2205515166;
+  }
+  95% {
+    opacity: 0.7927042358;
+  }
+  100% {
+    opacity: 0.0731900782;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.9729215229;
+  }
+  5% {
+    opacity: 0.5634987641;
+  }
+  10% {
+    opacity: 0.6478835105;
+  }
+  15% {
+    opacity: 0.0398576556;
+  }
+  20% {
+    opacity: 0.2821987755;
+  }
+  25% {
+    opacity: 0.3784012957;
+  }
+  30% {
+    opacity: 0.5325753245;
+  }
+  35% {
+    opacity: 0.5749468187;
+  }
+  40% {
+    opacity: 0.2007240244;
+  }
+  45% {
+    opacity: 0.836784418;
+  }
+  50% {
+    opacity: 0.5355555323;
+  }
+  55% {
+    opacity: 0.3845538187;
+  }
+  60% {
+    opacity: 0.8462164643;
+  }
+  65% {
+    opacity: 0.2913969682;
+  }
+  70% {
+    opacity: 0.7827541057;
+  }
+  75% {
+    opacity: 0.5548688234;
+  }
+  80% {
+    opacity: 0.9163713069;
+  }
+  85% {
+    opacity: 0.8960558781;
+  }
+  90% {
+    opacity: 0.2205515166;
+  }
+  95% {
+    opacity: 0.7927042358;
+  }
+  100% {
+    opacity: 0.0731900782;
+  }
+}
+@-webkit-keyframes turn-on {
+  0% {
+    transform: scale(1, 0.8) translate3d(0, 0, 0);
+    filter: brightness(30);
+    opacity: 1;
+  }
+  3.5% {
+    transform: scale(1, 0.8) translate3d(0, 100%, 0);
+  }
+  3.6% {
+    transform: scale(1, 0.8) translate3d(0, -100%, 0);
+    opacity: 1;
+  }
+  9% {
+    transform: scale(1.3, 0.6) translate3d(0, 100%, 0);
+    filter: brightness(30);
+    opacity: 0;
+  }
+  11% {
+    transform: scale(1, 1) translate3d(0, 0, 0);
+    filter: contrast(0) brightness(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) translate3d(0, 0, 0);
+    filter: contrast(1) brightness(1.1) saturate(1.1);
+    opacity: 1;
+  }
+}
+@keyframes turn-on {
+  0% {
+    transform: scale(1, 0.8) translate3d(0, 0, 0);
+    filter: brightness(30);
+    opacity: 1;
+  }
+  3.5% {
+    transform: scale(1, 0.8) translate3d(0, 100%, 0);
+  }
+  3.6% {
+    transform: scale(1, 0.8) translate3d(0, -100%, 0);
+    opacity: 1;
+  }
+  9% {
+    transform: scale(1.3, 0.6) translate3d(0, 100%, 0);
+    filter: brightness(30);
+    opacity: 0;
+  }
+  11% {
+    transform: scale(1, 1) translate3d(0, 0, 0);
+    filter: contrast(0) brightness(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) translate3d(0, 0, 0);
+    filter: contrast(1) brightness(1.1) saturate(1.1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes turn-off {
+  0% {
+    transform: scale(1, 1.3) translate3d(0, 0, 0);
+    filter: brightness(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.3, 0.001) translate3d(0, 0, 0);
+    filter: brightness(10);
+  }
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: scale(0, 0.0001) translate3d(0, 0, 0);
+    filter: brightness(50);
+  }
+}
+@keyframes turn-off {
+  0% {
+    transform: scale(1, 1.3) translate3d(0, 0, 0);
+    filter: brightness(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.3, 0.001) translate3d(0, 0, 0);
+    filter: brightness(10);
+  }
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: scale(0, 0.0001) translate3d(0, 0, 0);
+    filter: brightness(50);
+  }
+}
+@-webkit-keyframes overlay-anim {
+  0% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: hidden;
+  }
+  21% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes overlay-anim {
+  0% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: hidden;
+  }
+  21% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+
 .bacTitle{
 	margin-top:40px;
 	display:flex;
@@ -1195,4 +1586,8 @@ fotter{
 	position: absolute;
 	margin-top:16px;
 	margin-left:8px;
+}
+
+@media only screen and (max-width: 750px) {
+    h1{ text-align:center;
 }
