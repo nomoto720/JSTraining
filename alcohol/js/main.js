@@ -69,7 +69,7 @@ window.onload=()=>{
 		elem.style.marginTop=mt+"px";
 		elem.style.width="8px";
 		elem.style.height="8px";
-		elem.style.backgroundColor="#000033";
+		elem.style.backgroundColor="#000011";
 		elem.style.borderRadius="50%";
 		cup.appendChild(elem);	
 		}
@@ -88,7 +88,7 @@ window.onload=()=>{
 		elem.style.marginTop=mt+"px";
 		elem.style.width="8px";
 		elem.style.height="8px";
-		elem.style.backgroundColor="#000033";
+		elem.style.backgroundColor="#000011";
 		elem.style.borderRadius="50%";
 		cup2.appendChild(elem);	
 		}
