@@ -19,7 +19,8 @@ window.onload=()=>{
 
 	const btn3=document.getElementById('btn3');
 	const btn4=document.getElementById('btn4');
-	
+	const btnADC=document.getElementById('btnADC');
+	const alcoholDegreeBefore=document.getElementById('alcoholDegreeBefore');
 	const result=document.getElementById('result');
 	const result1=document.getElementById('result1');
 	const result2=document.getElementById('result2');
@@ -31,6 +32,12 @@ window.onload=()=>{
 	const waterColor=document.getElementById('waterColor');
 	const cup=document.getElementById('cup');
 	const cup2=document.getElementById('cup2');
+	const tvButtonBox=document.getElementById('tvButtonBox');
+	const tvButton1=document.getElementById('tvButton1');
+	const tvButton2=document.getElementById('tvButton2');
+	const switchLabel=document.getElementById('switchLabel');
+	const check=document.getElementById('switch');
+
 	let alcohol=0;
 	let degree=0;
 	let water=0;
@@ -274,4 +281,98 @@ window.onload=()=>{
 		bacBox8.style.marginTop="";
 		bacBox8.style.marginBottom="";
 	});
+	let onOff=true;
+	btnADC.addEventListener('click',()=>{
+		if(onOff==true){
+			onOff=false;
+			alcoholDegreeBefore.style.opacity="1";	
+		}else if(onOff==false){
+			onOff=true;
+			alcoholDegreeBefore.style.opacity="0";
+		}
+		alcoholDegreeBefore.style.transitionProperty="all";
+		alcoholDegreeBefore.style.transitionDuration="3000ms";
+		alcoholDegreeBefore.style.transitionTimingFunction="ease";
+
+	});
+
+	
+	
+	check.addEventListener("change", () => {
+
+  if (check.checked === false) {
+	tvButtonBox.style.marginTop="-65px";
+	tvButtonBox.style.marginLeft="40px";
+				tvButtonBox.style.left="0";
+				tvButtonBox.style.padding="22px";
+				switchLabel.style.padding="18px";
+				switchLabel.style.background="linear-gradient(135deg,#444,#000)";
+				switchLabel.style.border="none";
+				switchLabel.style.boxShadow="2px 2px 1px #000,-1.3px -1.3px 3px #000"
+				tvButton1.style.top="0.8px";
+				tvButton1.style.left="0.8px";
+				tvButton1.style.background="linear-gradient(135deg,#000,#444)";
+				tvButtonBox.style.transitionProperty="";
+				tvButtonBox.style.transitionDuration="";
+				tvButtonBox.style.transitionTimingFunction="";
+				tvButtonBox.style.transitionDelay="";
+				tvButton1.style.transitionProperty="";
+				tvButton1.style.transitionDuration="";
+				tvButton1.style.transitionTimingFunction="";
+				tvButton1.style.transitionDelay="";
+				tvButton2.style.transitionProperty="";
+				tvButton2.style.transitionDuration="";
+				tvButton2.style.transitionTimingFunction="";
+				tvButton2.style.transitionDelay="";
+				switchLabel.style.transitionProperty="";
+				switchLabel.style.transitionDuration="";
+				switchLabel.style.transitionTimingFunction="";
+				switchLabel.style.transitionDelay="";
+				tvButton1.style.padding="22px";
+				tvButton2.style.top="";
+				tvButton2.style.left="";
+				tvButton2.style.padding="0";
+				tvButton2.style.opacity="0";
+	}
+
+if (check.checked === true) {
+				tvButtonBox.style.marginTop="-500px";
+				tvButtonBox.style.marginLeft="0";
+				tvButtonBox.style.left="46%";
+				switchLabel.style.padding="30px";
+				switchLabel.style.top="4.4px";
+				switchLabel.style.left="4.4px";
+				switchLabel.style.background="linear-gradient(135deg,#444,#000 45px,#ea472c 60px, #240601)";
+				switchLabel.style.borderBottom="1.5px solid #560f03";
+				switchLabel.style.borderRight="1.5px solid #560f03";
+				switchLabel.style.boxShadow="2px 2px 1px #000,-1.3px -1.3px 3px #000,2px 2px 1px #f59080 inset";
+				switchLabel.style.backgroundSize="90px 150px";
+				switchLabel.style.backgroundPosition="0 100%";
+				tvButton1.style.padding="36px";
+				tvButton1.style.background="linear-gradient(135deg,#000,#444 45px, #240601 60px,#bc311a )";
+				tvButton1.style.backgroundSize="90px 150px";
+				tvButton1.style.backgroundPosition="0 100%";
+				tvButton2.style.padding="46px";
+				tvButton2.style.top="-9px";
+				tvButton2.style.left="-9px";
+				tvButton2.style.opacity="1";
+				tvButtonBox.style.transitionProperty="all";
+				tvButtonBox.style.transitionDuration="3000ms";
+				tvButtonBox.style.transitionTimingFunction="ease";
+				tvButtonBox.style.transitionDelay="2s";
+				tvButton1.style.transitionProperty="all";
+				tvButton1.style.transitionDuration="3000ms";
+				tvButton1.style.transitionTimingFunction="ease";
+				tvButton1.style.transitionDelay="2s";
+				tvButton2.style.transitionProperty="all";
+				tvButton2.style.transitionDuration="3000ms";
+				tvButton2.style.transitionTimingFunction="ease";
+				tvButton2.style.transitionDelay="2s";
+				switchLabel.style.transitionProperty="all";
+				switchLabel.style.transitionDuration="3000ms";
+				switchLabel.style.transitionTimingFunction="ease";
+				switchLabel.style.transitionDelay="2s";
+  }
+	});
+
 }

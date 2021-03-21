@@ -1,0 +1,322 @@
+html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	text-decoration: none;
+}	
+html,body {
+	font-family: 'meiryo UI',serif;
+	width:100%;
+}
+#topPage{
+	
+}
+#nav{
+	position:fixed;
+	top:20px;
+	right:20px;
+	 z-index: 2;
+}
+ul,li,a,.cycle{
+	padding:0;
+	margin:0;
+	font-family:"Hiragino Kaku Gothic ProN",Mieryo,sans-serif;
+	text-align:right;
+		color: #FFD700;
+	font-size:12px;
+	line-height:30px;
+
+}
+a{
+	display: block;
+	text-decoration:none;
+	
+}
+ul{
+	list-style:none;
+}
+a .hover{
+display: none;
+}
+a:hover .nomal{
+display: none;
+}
+/* ホバー時に、ホバー時の文字を表示する */
+a:hover .hover{
+display: inline;
+}
+.topPage{
+	position:fixed;
+	top:20px;
+	right:20px;	
+}
+.storyPage{
+	position:fixed;
+	top:50px;
+	right:20px;	
+}
+.castPage{
+	position:fixed;
+	top:80px;
+	right:20px;	
+}
+.gallery{
+	position:fixed;
+	top:110px;
+	right:20px;	
+}
+header{
+		height:1050px;
+		background-image:url(../images/headerimg.jpg);
+		background-size: cover;
+	box-sizing: border-box;
+background-attachment: fixed;
+	top: 0; 
+	left: 0; 
+	margin: 0; 
+	min-width:970px;
+}
+#container{
+	width:970px;
+	margin:0 auto;
+}
+h1{
+		width: 550px;
+		position:absolute;
+		top:40px;
+	left:50px;	
+		 z-index: 1;
+
+}
+.title {
+	width: 600px;
+
+}
+main{
+		height:1930px;
+}	
+main h2{
+	left:0;
+		min-width:970px;
+	text-align:center;
+	font-size:30px;
+	padding:0 10px;
+	background-color:#696969;
+	color:white;
+	box-sizing: border-box;
+}
+.column{
+	height: 950px;
+		width: 100%;
+}
+#story{
+	background: url(../images/main1.jpg) no-repeat top center;
+	background-size: cover;
+}
+#cast{
+	background: url(../images/main2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.hoge { 
+	text-align: center;
+	padding:120px;
+	overflow: hidden;
+	justify-self: stretch;
+	align-self: start;
+}
+.contents{
+	width: 970px;
+	margin:100px auto 0;
+}
+.arasuji{
+	font-size:22px;
+	color:white;
+	letter-spacing: 33px;
+	writing-mode:vertical-rl;
+	float:left;
+	margin:12px 30px 0 0;
+	box-sizing: border-box;
+}
+main p:first-letter{
+	font-size:45px;
+	font-weight: bold;
+	padding:15px 10px 0px 1px;
+	color:yellow;
+	float: left;
+}
+main p{
+		width: 910px;
+		font-size:18px;
+		color:white;
+		line-height: 31px;
+		letter-spacing: 1px;
+	text-align: justify;
+			box-sizing: border-box;
+}
+.castfont{
+		text-align: center;
+		margin:0 auto;
+		padding:35px;
+		font-size:32px;
+		color:White;
+		letter-spacing:5px;
+}
+.wrapper{
+	text-align: center;
+		margin:0 auto 0;
+		width: 610px;
+		height: 380px;
+}
+.nameMinami{
+		font-size:30px;
+		color:white;
+	letter-spacing: 5px;
+		margin:0 15px 0 0;
+		writing-mode:vertical-rl;
+		float:left;
+}
+.minamiEnglihs{
+	color:yellow;
+			font-size:14px;
+	letter-spacing: 5px;
+		writing-mode:vertical-rl;
+}
+.minami{
+	float:left;
+}
+.minami img {
+	width: 210px;
+	margin:0 70px 0 0;
+}
+.miki{
+	color:white;
+	margin:0 60px 0 0;
+	font-size:22px;
+	letter-spacing: 12px;
+	border-bottom:1px solid yellow;
+}
+.minamiProfile{
+	width: 215px;
+	margin:10px 0 0;
+	color:white;
+	font-size:14px;
+	text-align: justify;
+}	
+.nameSato{
+		font-size:30px;
+		color:white;
+	letter-spacing: 5px;
+		writing-mode:vertical-rl;
+		float:left;
+}
+.satoEnglihs{
+	color:yellow;
+			font-size:14px;
+		letter-spacing: 5px;
+		writing-mode:vertical-rl;
+}
+.hiroki img {
+	width: 210px;
+	margin:0 0 15px 0;
+}
+.hiro{
+	color:white;
+	font-size:22px;
+	margin:-15px 0 0 0;
+	letter-spacing: 12px;
+		width: 215px;
+	border-bottom:1px solid yellow;
+		float:right;
+}
+.hirokiProfile{
+		margin:10px 0 0;
+	width: 215px;
+	color:white;
+	font-size:15px;
+	text-align: justify;
+	float:right;
+}
+.music{
+		text-align: center;
+		margin:40px auto 0;
+		padding:35px;
+		font-size:32px;
+		color:White;
+		letter-spacing:5px;
+}
+.wrapper2{
+	text-align: left;
+		margin:0 auto 0;
+		width: 610px;
+	height: 300px;
+}
+.ogata img {
+	width: 210px;
+			margin:0 19px 0 0;
+	float:left;
+}
+.OgataBox{
+	
+}
+.nameOgata{
+		font-size:30px;
+	color:white;
+	letter-spacing: 3px;
+}
+.ogataEnglish{
+	color:yellow;
+		font-size:14px;
+		letter-spacing: 5px;
+}
+.ogataProfile{
+	color:white;
+	font-size:15px;
+	text-align: justify;
+			line-height: 30px;
+}
+.box{
+		display:flex;
+		text-align:center;
+		margin:0;
+	justify-content: flex-start;
+		box-sizing: border-box;
+}
+.box img{
+		width:25%;
+		height:25%;
+}
+footer{
+		width:100%;
+		margin:0;
+		text-align:center;
+		font-size:10px;
+		padding:0px;
+		background-color:#696969;
+	color:white;
+		box-sizing: border-box;
+}
+@media screen and (min-width:970px){
+header,#story,#cast,.box,footer{
+		width:99.5vw;
+		margin: 0 calc(50% - 50vw);
+	}
+}
+@media screen and (min-width:1000px){
+main h2{
+		width:99.5vw;
+		margin: 0 calc(50% - 50vw);
+	}
+}
+@media screen and (max-width:1100px){
+.contents{
+		position:absolute;
+		right:0px;
+	}
+}
+@media screen and (max-width:1000px){
+.contents{
+		position:absolute;
+		left:0px;
+	}
+}

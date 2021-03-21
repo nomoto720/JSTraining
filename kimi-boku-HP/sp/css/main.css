@@ -1,0 +1,451 @@
+html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	text-decoration: none;
+}	
+html,body {
+	font-family: 'meiryo UI',serif;
+	width:100%;
+box-sizing: inherit; 
+}
+
+#ham-menu {
+    background-color: #FFF; 
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px 30px; 
+    position: fixed;
+    right: -250px; 
+    top: 0;
+    transition: transform 0.3s linear 0s; 
+    width: 250px; 
+	z-index: 100;
+	opacity:0.8;
+}
+#menu-background {
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.3s linear 0s; 
+    width: 100%;
+    z-index: -1;
+}
+
+#menu-icon {
+	color:#555;
+    border-radius: 0 0 0 10px; 
+    cursor: pointer;
+    font-size: 50px; 
+    height: 50px; 
+    line-height: 50px; 
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50px; 
+    transition: all 0.3s linear 0s; 
+    z-index: 100;
+}
+#menu-cl{
+	color:#555;
+    border-radius: 0 0 0 10px; 
+    cursor: pointer;
+    font-size: 50px; 
+    height: 50px; 
+    line-height: 50px; 
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50px; 
+    transition: all 0.3s linear 0s; 
+	z-index: 99;
+	opacity:0;
+}
+#menuBotan{
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	background-color:#555
+		    transition: all 0.3s linear 0s; 
+	z-index: 100;
+	}
+#menu-cb {
+    display: none; 
+}
+
+#menu-cb:checked ~ #ham-menu,
+#menu-cb:checked ~ #menu-icon {
+    transform: translate(-150px); 
+}
+
+#menu-cb:checked ~ #menu-icon{
+		opacity:0;
+}
+
+#menu-cb:checked ~ #menu-cl{
+	  transform: translate(-150px);
+		opacity:1;
+}
+#menu-cb:checked ~ #menu-background {
+    opacity: 0.5;
+    z-index: 99;
+}
+
+
+ul,li,a,.cycle{
+	font-family:"Hiragino Kaku Gothic ProN",Mieryo,sans-serif;
+	color: #222;
+	font-size:12px;
+	letter-spacing:3px;
+	line-height:35px;
+}
+a{
+	display: block;
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+
+
+
+#topPage{	
+}
+
+/*メニューバー
+#nav{
+	position:fixed;
+	top:20px;
+	right:20px;
+	z-index: 2;
+}
+ul,li,a,.cycle{
+	padding:0;
+	margin:0;
+	font-family:"Hiragino Kaku Gothic ProN",Mieryo,sans-serif;
+	text-align:right;
+		color: #FFD700;
+	font-size:12px;
+	line-height:30px;
+
+}
+a{
+	display: block;
+	text-decoration:none;
+	
+}
+ul{
+	list-style:none;
+}
+a .hover{
+display: none;
+}
+a:hover .nomal{
+display: none;
+}
+
+a:hover .hover{
+display: inline;
+}
+.topPage{
+	position:fixed;
+	top:20px;
+	right:20px;	
+}
+.storyPage{
+	position:fixed;
+	top:50px;
+	right:20px;	
+}
+.castPage{
+	position:fixed;
+	top:80px;
+	right:20px;	
+}
+.gallery{
+	position:fixed;
+	top:110px;
+	right:20px;	
+}*/
+header{
+	height:92vh;
+	width:100%;
+	overflow: hidden;
+}
+#container{
+}
+.topimg{
+	height:100%;
+	background-image:  url(../images/headerimgSp.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position:center;
+}
+h1{
+	width:100%;
+	position:absolute;
+	top:1%;
+	z-index: 1;
+		box-sizing: border-box;
+
+}
+.title {
+		width:42%;
+		position:absolute;
+		left:2%;
+		box-sizing: border-box;
+
+}
+main{
+	height:283vh;
+}	
+main h2{
+	left:0;
+	width:100%;
+	text-align:center;
+	font-size:1.5em;
+	padding:0 auto;
+	background-color:#696969;
+	color:white;
+}
+.column{
+ height:100vh;
+	width: 100%;
+}
+.column2{
+	height:181vh;
+	width: 100%;
+}
+#story{
+	background: url(../images/main1.jpg) no-repeat top center;
+	background-size: cover;
+	position: relative;
+	box-sizing: border-box;
+	height:100vh;
+}
+.contents{
+	width: 100%;
+	height:100vh;
+	box-sizing: border-box;
+}
+.arasuji{
+	font-size:5vw;
+	color:white;
+	letter-spacing: 1.5em;
+	writing-mode:vertical-rl;
+	padding:0.8em 0 0 0.8em;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.arasuziDoga{
+	position: absolute;
+	left:50%; transform: translateX(-50%);
+	bottom:0;
+	height:68vh;
+}
+main p:first-letter{
+	font-size:9vw;
+	font-weight: bold;
+	padding:1.5vh 0.3vw 0 0.3vw;
+	color:yellow;
+	float: left;
+}
+main p{
+	width: 98%;
+	position: relative;
+	top:4vh;
+	bottom:4vh;
+	font-size:3.3vw;
+	color:white;
+	line-height: 1.6em;
+	letter-spacing: 0.1em;
+	text-align: justify;
+}
+.hoge{
+	width: 88vw;	
+	position: relative;
+	top:6vh;
+	height: 0;
+	padding: 0 0 56.25%;
+	overflow: hidden;
+}
+.hoge iframe{ 
+	position: absolute;
+	top:0;
+	right:0;
+	width:100% !important;
+	height:100% !important;	
+}
+#cast{
+	background: url(../images/main2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.castfont{
+	text-align: center;
+	margin:0 auto;
+	padding:1em;
+	font-size:2em;
+	color:White;
+	letter-spacing:5px;
+	padding-bottom:1.5vh;.
+}
+.minamiName{
+	color:white;
+	font-size:1.3em;
+	padding-left:6.4vw;
+}
+.minamiEnglihs{
+	color:yellow;
+	font-size:0.8em;
+	margin-top:0;
+	padding-left:6vw;
+	letter-spacing: 0.3em;;
+	writing-mode:vertical-rl;
+}
+.minami img {
+	width: 34vw;
+	margin:0.5vh 0 0 0.5vw;
+}
+.miki{
+	float:right;
+	color:white;
+	font-size:1.6em;
+	letter-spacing: 0.4em;;
+	margin-top:6.7vh;
+	margin-right:21vw;
+	padding-top:0;
+}
+.mP{
+	margin-top:1.5vh;
+	position: absolute;
+	left:50%; transform: translateX(-85%);
+}
+.minamiProfile{
+	width:167%;
+	color:white;
+	font-size:3.3vw;
+	line-height: 1.6em;
+	letter-spacing: 0.1em;
+	text-align: justify;
+	border-bottom:1px solid yellow;
+}
+.hirokiName{
+	color:white;
+	font-size:1.3em;
+	margin-top:25vh;
+	padding-left:6.4vw;
+}
+.hirokiEnglihs{
+	color:yellow;
+	font-size:0.8em;
+	margin-top:0;
+	padding-left:6vw;
+	letter-spacing: 0.3em;;
+	writing-mode:vertical-rl;
+}
+.hiroki img {
+	width: 34vw;
+	margin:0.5vh 0 0 0.5vw;
+}
+.hiro{
+	float:right;
+	color:white;
+	font-size:1.6em;
+	letter-spacing: 0.4em;;
+	margin-top:6.7vh;
+	margin-right:21vw;
+	padding-top:0;
+}
+.hirokiProfile{
+	width:167%;
+	font-size:3.3vw;
+	line-height: 1.6em;
+	letter-spacing: 0.1em;
+	text-align: justify;
+	border-bottom:1px solid yellow;
+	color:black;
+}
+.musicfont{
+	text-align: center;
+	margin:0 auto;
+	padding:1vh;
+	font-size:2em;
+	color:White;
+	letter-spacing:5px;
+	margin-top:20vh;.
+}
+.ogataName{
+	float:left;
+	color:white;
+	font-size:1.3em;
+	margin-top:8vh;
+	margin-left:12vw;
+	padding-right:6vw;
+
+}
+.ogataEnglihs{
+	color:yellow;
+	font-size:0.7em;
+	margin-top:0;
+	letter-spacing:0.1em;
+	writing-mode:vertical-rl;
+}
+.box{
+	display:flex;
+	position: relative;
+	bottom:0;
+}
+.box img{
+	width:25%;
+	height:25%;
+}
+footer{
+	height:3vh;
+	width:100%;
+	text-align:center;
+	font-size:3vw;
+	background-color:#696969;
+	color:white;
+}
+@media screen and (min-width:540px){
+	main p{
+		font-size:2.3vw;
+	}main p:first-letter{
+		font-size:7vw;	
+	}.arasuji {
+		font-size:4.5vw;
+	} .minamiProfile , .hirokiProfile,.ogataEnglihs,.hirokiEnglihs,.minamiEnglihs {
+		font-size:2.5vw;
+	}.castfont,.musicfont{
+		font-size:5vw;
+	}.ogataName,.hirokiName,.minamiName, .hiro , .miki{
+		font-size:4vw;
+	}
+}		
+
+@media screen and (min-width:375px) and (min-height:812px) and (max-width:412px) and (max-height:824px) , screen and (min-width:279px) and (min-height:652px) and (max-width:281px) and (max-height:654px){
+	.arasuziDoga{
+		height:60vh;
+	}
+}	
+@media screen and (min-width:375px) and (min-height:812px) and (max-width:412px) and (max-height:824px), {
+	main{
+	height:260vh;
+	}	
+	.column2{
+	height:157vh;
+	}
+}	
+@media screen and (min-width:279px) and (min-height:652px) and (max-width:281px) and (max-height:654px){
+	.ogataName{
+	margin-left:4vw;
+	font-size:1.3em;
+	}
+	.column2{
+	height:179vh;
+	}
+}	

@@ -56,6 +56,7 @@
 	</section>
 	<section class="alcoholDegree">	
 		<div class="empty1"></div>
+		<div class="alcoholDegreeBefore" id="alcoholDegreeBefore">		
 		<div class="alcoholDgreeTitle">	
 			<div class="titleAD1">		
 				<div class="circle">◯</div>
@@ -105,9 +106,11 @@
 		<div class="btn2Deco">&#9816;</div>
 		<div class="btn1Deco">&nbsp;&nbsp;Clear</div>
 	</div>
+				</div>
 	<div class="yohaku"></div>
 	<div class="resultBox">
-		<div class="alchol">
+		
+		<button class="alchol" id="btnADC">
 			<div class="alcoholImgA"></div>
 			<div class="alcoholImgB"></div>
 			<div class="alcoholImgC"></div>
@@ -117,20 +120,32 @@
 			<div class="alcoholImgG"></div>
 			<div class="alcoholImgH"></div>
 			<div class="alcoholImgD"></div>
-		</div>
+		</button>
+				
 		<div class="results">
 			<p id="result1"></p>
 			<p id="result"></p>
 		</div>
 	</div>
 	<section class="drunkGame">
+	<div class="pop-box">
+  <label for="popup-on"><div class="btn-open">
 	<div class="gameBox">
 		<img border="0" src="images/gameBox.png"  height="350">
 	</div>
-	
-<!--	<div class="drunkGameFrame">
+	</div></label>
+  <input type="checkbox" id="popup-on">
+  <div class="popup" >
+    <label for="popup-on" class="icon-close">×</label>
+    <div class="popup-content">
+	<!-- ポップアップの中身 -->
+       <div class="drunkGameFrame">
 		<iframe src="https://chita-hp.com/drunk/index.html" width="400" height="300" scrolling="no" frameborder="0"></iframe>
-	</div> -->
+	</div> 
+        <!-- ./ポップアップの中身　ここまで -->								
+	    </div>
+  </div>
+</div>							
 </section>
 
 
@@ -141,6 +156,7 @@
 	<input id="switch" type="checkbox" checked="">
 <div class="container2">
   <div class="screen">
+	
 	<div class="overlay" style="color:lime;">入力１</div>
     <img class="glitch"  alt="">
 	<div class="container3">
@@ -205,14 +221,16 @@
 </div>
   </div>
 </div>
+	<div class="tvtop"></div>
+	<div class="tvBottom"></div>
 </section>
 
 <div class="copyright">&copy;2021AlcoholHour</div>
 </div>
 
-<div class="tvButtonBox">
-<div class="tvButton1"></div><div class="tvButton2"></div>
-<label class="switch-label" for="switch"></label>
+<div class="tvButtonBox" id="tvButtonBox">
+<div class="tvButton1" id="tvButton1"></div><div class="tvButton2" id="tvButton2"></div>
+<label class="switch-label" for="switch" id="switchLabel"></label>
 </section>
 <!--	<div class="alchol2">
 		<div class="alcoholImg1"></div>
