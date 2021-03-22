@@ -10,6 +10,7 @@ padding:0;
 	align-items:center;
 	width:73%;
 	margin:auto;
+	font-family:sans-serif;
 }
 h1{
 	font-size:60px;;
@@ -25,12 +26,11 @@ h2{
 	font-weight:400;
 	letter-spacing:8px;
 	color:#333;
-	margin-top:50px;
+	margin-top:85px;
 }
 h3{
 	font-size:13px;
 	letter-spacing:1.5px;
-	font-family:"sans-serif";
 	font-weight:100;
 	color:#444;
 	margin-top:7px;
@@ -47,15 +47,16 @@ h3{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	max-width:550px;
+	width:100vw;
+	background-color:#FFFF55;
 }
 .aboutMe>p{
 	font-size:14px;
 	line-height:27px;
 	letter-spacing:1.5px;
-	font-family:"sans-serif";
 	font-weight:100;
 	color:#444;
+	max-width:550px;
 	margin-top:46px;
 	margin-bottom:160px;
 }
@@ -63,7 +64,9 @@ h3{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	width:750px;
+	min-width:250px;
+	max-width:750px;
+	width:64vw;
 }
 .skillsBox{
 	display:flex;
@@ -73,23 +76,27 @@ h3{
 
 }
 .skillImg {
-	width:135px;
-	margin-right:25px;
+	width:12vw;
+	min-width:55px;
+	max-width:135px;
+	margin-right:1.3vw;
 	margin-bottom:30px;
 }
 .skillImg2{
-	width:135px;
-	margin-right:19px;
+	width:12vw;
+	min-width:55px;
+	max-width:135px;
+	margin-right:0.3vw;
 	margin-bottom:25px;
 }
 .otherSkillsBox{
 	display:flex;
-	margin-top:26px;
+	margin-top:20px;
 	margin-bottom:160px;
 }
 .otherSkillImg{
-	width:60px;
-	margin-right:10px;
+	width:55px;
+	margin-right:1.3vw;
 	margin-bottom:25px;
 }
 .works{
@@ -101,4 +108,45 @@ h3{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+	width:100vw;
+	background-color:#FFFF55;
+}
+.contactForm{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	margin-top:46px;
+	margin-bottom:110px;
+}
+.name,.email,.message{
+	width:230px;
+	margin-bottom:20px;
+	padding-left:10px;
+	font-size:16px;
+	border: none;
+	border-radius: 5px;
+	font-family:sans-serif;
+}
+.name,.email{
+	height:35px;
+}
+.message{
+	height:100px;
+	padding-top:8px;
+}
+.formBtn{
+	width:100px;
+	margin-top:10px;
+	padding:8px;
+	border:none;
+	border-radius: 5px;
+	font-size:16px;
+	color:white;
+	background-color:#ff3c00;
+	transition: background 0.2s;
+}
+.formBtn:hover{
+	background-color:#FFba00;
+	opacity: 0.8;
 }
