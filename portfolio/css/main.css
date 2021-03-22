@@ -52,21 +52,28 @@ h3{
 	width:100vw;
 	background-color:#f7d14d;
 }
-.aboutMe>p{
+.aboutMe>div{
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	max-width:550px;
+	width:85vw;
+}
+.aboutMe>div>p{
 	font-size:14px;
 	line-height:27px;
 	letter-spacing:1.5px;
 	font-weight:100;
 	color:#444;
-	max-width:550px;
 	margin-top:46px;
-	position:relative;
+	margin-bottom:200px;
 	z-index:5;
 }
 .profileImg{
 	width:200px;
 	position:absolute;
-	top:80px;
+	margin-top:320px;
 	right:0;
 	z-index:2;
 }
@@ -95,7 +102,7 @@ h3{
 	width:12vw;
 	min-width:55px;
 	max-width:135px;
-	margin-right:0.3vw;
+	margin-right:0.6vw;
 	margin-bottom:25px;
 }
 .otherSkillsBox{
@@ -112,6 +119,20 @@ h3{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+	background-color:#EEE;
+	width:100vw;
+}
+.warksBox{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	margin-top:46px;
+	margin-bottom:160px;
+	max-width:900px;
+}
+.warksImg{
+	width:250px;
+	margin-bottom:100px;
 }
 .contact{
 	display:flex;
