@@ -3,14 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Ryot Nomoto Portfolio</title>
+	<title>RYOTA NOMOTO PORTFOLIO</title>
 	<link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
+		<input id="menu-cb" type="checkbox" value="off">
+		<label id="menu-icon" for="menu-cb">≡</label><label id="menu-cl" for="menu-cb">×</label>
+		<label id="menu-background" for="menu-cb"></label>
+		<div id="ham-menu">
+    <ul>
+        <li><label id="menuBotan" for="menu-cb"><a href="#topPage">TOP</a></label></li>
+        <li><a href="#story" >STORY</a></li>
+        <li><a href="#cast">CAST&STAFF</a></li>
+		<li><a href="#gallery">GALLERYL</a></li>
+    </ul>
+</div>
+	<a href="#topPage" class="topBtn">RYOTA NOMOTO<br>PORTFOLIO</a>
 	<div class="container">
+		<a id="topPage"></a>
+		<div class="topEmpty"></div>
 		<section class="topPage">
 			<h1>RYOTA NOMOTO</h1>
-				<p></<p>
 		</section>
 		<section class="aboutMe">
 			<h2>ABOUT ME</h2>
@@ -25,27 +38,31 @@
 				趣味は読書と、誰かとお酒を飲んで話すこと。好きなビールは台湾ビールとBIG WAVE。最近ぐッときた小説は金原ひとみ「ストロングゼロ」。好きなゲーム主題歌は「ふぃぎゅ@メイト」。</p>
 				<img src="images/profileImg.png" class="profileImg" alt="profileImg">
 			</div>
+		<img src="images/backWhite.png" class="backImg">
 		</section>
 		<section class="skills">
-			<h2>SKILLS</h2>
-			<h3>習得プログラミングスキル</h3>
-			<div class="skillsBox">
-				<p><img src="images/skill1.png" class="skillImg" alt="Java" title="java"></p>
-				<p><img src="images/skill2.png" class="skillImg" alt="Unityt" title="Uityt"></p>
-				<p><img src="images/skill3.png" class="skillImg" alt="Java Script" title="Java Script"></p>
-				<p><img src="images/skill4.png" class="skillImg" alt="HTML" title="HTML"></p>
-				<p><img src="images/skill5.png" class="skillImg" alt="CSS" title="CSS"></p>
-				<p><img src="images/skill6.png" class="skillImg" alt="python" title="python"></p>
-				<p><img src="images/skill7.png" class="skillImg" alt="MySQL" title="MySQL"></p>
-				<p><img src="images/skill8.png" class="skillImg2" alt="PHP" title="PHP"></p>
+			<div class="skillsContainer">
+				<h2>SKILLS</h2>
+				<h3>習得プログラミングスキル</h3>
+				<div class="skillsBox">
+					<p><img src="images/skill1.png" class="skillImg" alt="Java" title="java"></p>
+					<p><img src="images/skill2.png" class="skillImg" alt="Unityt" title="Uityt"></p>
+					<p><img src="images/skill3.png" class="skillImg" alt="Java Script" title="Java Script"></p>
+					<p><img src="images/skill4.png" class="skillImg" alt="HTML" title="HTML"></p>
+					<p><img src="images/skill5.png" class="skillImg" alt="CSS" title="CSS"></p>
+					<p><img src="images/skill6.png" class="skillImg" alt="python" title="python"></p>
+					<p><img src="images/skill7.png" class="skillImg" alt="MySQL" title="MySQL"></p>
+					<p><img src="images/skill8.png" class="skillImg2" alt="PHP" title="PHP"></p>
+				</div>
+				<h3>その他のスキル</h3>
+				<div class="otherSkillsBox">				
+					<p><img src="images/skill9.png" class="otherSkillImg" alt=""DaVinci Resolve" title="DaVinci Resolve"></p>
+					<p><img src="images/skill10.png" class="otherSkillImg" alt="Final Cut Pro7" title="Final Cut Pro7"></p>
+					<p><img src="images/skill11.png" class="otherSkillImg" alt="Premiere Pro" title="Premiere Pro"></p>
+					<p><img src="images/skill12.png" class="otherSkillImg" alt="Photoshop" title="Photoshop"></p>
+				</div>
 			</div>
-			<h3>その他のスキル</h3>
-			<div class="otherSkillsBox">				
-				<p><img src="images/skill9.png" class="otherSkillImg" alt=""DaVinci Resolve" title="DaVinci Resolve"></p>
-				<p><img src="images/skill10.png" class="otherSkillImg" alt="Final Cut Pro7" title="Final Cut Pro7"></p>
-				<p><img src="images/skill11.png" class="otherSkillImg" alt="Premiere Pro" title="Premiere Pro"></p>
-				<p><img src="images/skill12.png" class="otherSkillImg" alt="Photoshop" title="Photoshop"></p>
-			</div>
+			<img src="images/backGray.png" class="backImg">
 		</section>
 		<section class="works">
 			<h2>WORKS</h2>
@@ -69,12 +86,12 @@
 					<span class="worksContent">
 					<span class="useSkill">Web Siteデザイン・コーデイング<br>2Dゲーム制作/ランキング管理システム開発</span>
 					<span>
+						<img src="images/skill1.png" class="useSkillImg">
 						<img src="images/skill2.png" class="useSkillImg">
 						<img src="images/skill3.png" class="useSkillImg">
 						<img src="images/skill4.png" class="useSkillImg">
 						<img src="images/skill5.png" class="useSkillImg">
 						<img src="images/skill7.png" class="useSkillImg">
-						<img src="images/skill8.png" class="useSkillImg">
 					</span>
 					</span>
 				</p>
@@ -133,6 +150,7 @@
 					</span>
 				</p>
 			</div>
+		<img src="images/backYellow.png" class="backImg">
 		</section>
 		<section class="contact">
 			<h2>CONTACT</h2>
@@ -147,6 +165,6 @@
 		<footer>
 			<p>&copy; 2021 Ryota Nomoto</p>
 		</footer>
-	</div>
 </body>
+<script type="text/javascript" src="js/main.js"></script>
 </html>
