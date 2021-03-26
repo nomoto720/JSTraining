@@ -299,6 +299,9 @@ h3{
 .worksImg:hover{
 	opacity:0.4;
 }
+.worksSkill:hover{
+	transition:0.7s;
+}
 .worksContent{
 	display:flex;
 	bottom:20px;
@@ -309,7 +312,7 @@ h3{
 	opacity:0;
 	transition:0.7s;
 }
-.worksImg:hover ~ .worksContent{
+.worksSkill:hover ~ .worksContent{
 	left:0;
 	opacity:1;
 }
