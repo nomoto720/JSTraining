@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
 
 *{
 	margin:0;
@@ -6,6 +6,8 @@
 }
 body{
 	background-color:#f7d14d;
+	margin:0;
+	padding:0;
 }
 ::selection{
 	background:#f7d14d;
@@ -135,30 +137,42 @@ ul{
 	align-items:center;
 	width:100vw;
 	margin:auto;
-	font-family:sans-serif;
+	background-color:white;
+	font-family: 'Alef', sans-serif;
+	overflow: hidden;
+}
+.topGray{
+	position:absolute;
+	margin-top:0;
+	left:0;
+	padding-top:0;
+	width:80vw;
+	z-index:3;
+	overflow: hidden;
 }
 .works{
 	background-color:white;
-	width:100vw;
+	width:70vw;
 	display:flex;
 	flex-direction:column;
-	align-items:center;
+	align-items:left;
+		overflow: hidden;
 }
 h1{
 	font-size:16px;
 	font-weight:400;
 	letter-spacing:3px;
 	margin-top:130px;
-	border-bottom: 2px solid #555;
-	text-align:center;
-	width:80px;
+	border-bottom: 1.5px solid #ccc;
+	text-align:left;
+	width:300px;
 }
 h2{
 	font-size:29px;
-	font-weight:400;
+	font-weight:300;
 	letter-spacing:2.5px;
 	margin-top:15px;
-	text-align:center;
+	text-align:left;
 }
 .urlFontSize{
 	font-size:11px;
@@ -166,6 +180,73 @@ h2{
 	margin-top:-8px;
 }
 .workGIF{
-	margin-top:25px;
-	width:80vw;
+	margin-top:30px;
+	margin-bottom:60px;
+	max-width:500px;
+	width:55vw;
+	overflow: hidden;
+}
+.workFont{
+	margin-top:30px;
+	margin-bottom:30px;
+	font-family: sans-serif;
+	font-size:15px;
+	font-weight:100;
+	line-height:28px;
+	color:#333;
+	width:600px;
+}
+.workFontWeight{
+	font-weight:600;
+}
+h3{
+	margin-top:50px;
+	font-size:23px;
+	font-weight:500;
+	font-family: sans-serif;
+	border-bottom: 1.5px solid #ccc;
+	padding-bottom:5px;
+}
+.worksul{
+	margin-top:30px;
+	margin-left:20px;
+	list-style: disc;
+}
+.worksul li{
+	letter-spacing:0px;
+	overflow: visible;
+	line-height:28px;
+}
+.skillul li{
+	letter-spacing:0px;
+	overflow: visible;
+	line-height:28px;
+}
+ol{
+	margin-left:37px;
+}
+.example li{
+	margin-top:30px;
+	font-size:19px;
+	font-weight:500;
+}
+.examplefont{
+	margin-top:10px;
+	margin-left:-35px;
+}
+.backImg{
+	margin-top:100px;
+	width:100vw;
+}
+footer{
+	width:100vw;
+	background-color:#f7d14d;
+	margin-top:-1px;
+	z-index:5;
+}
+footer>p{
+	padding-bottom:50px;
+	padding-left:8vw;
+	font-size:12px;
+	color:#333;
 }

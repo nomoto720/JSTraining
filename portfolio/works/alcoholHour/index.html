@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>RYOTA NOMOTO WORKS</title>
+	<link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+	<input id="menu-cb" type="checkbox" value="off">
+	<label id="menu-icon" for="menu-cb">≡</label><label id="menu-cl" for="menu-cb">×</label>
+	<label id="menu-background" for="menu-cb"></label>
+	<div id="ham-menu">
+    	<ul>
+			<li><label id="menuBotan" for="menu-cb"><a href="../../index.html">TOP</a></label></li>
+			<li><a href="../../index.html#aboutMe2" >ABOUT ME</a></li>
+			<li><a href="../../index.html#skills2">SKILLS</a></li>
+			<li><a href="../../index.html#works2">WORKS</a></li>
+			<li><a href="../../index.html#contact2">CONTACT</a></li>
+		</ul>
+	</div>
+	<a href="../../index.html" class="topBtn">RYOTA NOMOTO<br>PORTFOLIO</a>
+	<div class="container">
+	<section class="works">
+		<img src="images/topGray.png" class="topGray">
+		<a href="../../index.html#works2"><h1>WORKS</h1></a>
+		<a href="https://chita-hp.com/alcohol/"><h2>Alcohol Hour</h2></a>
+		<a href="https://chita-hp.com/alcohol/"><p class="urlFontSize">https://chita-hp.com/alcohol/</p></a>
+		<img src="../../images/works2.jpg" class="workGIF">
+		<h3>サービス概要</h3>
+		<p class="workFont">
+			映画監督が開催する役者志望の方のための演技ワークショップ応募サイトです。<br>
+			以前、制作したものをもとにダミーサイトを作りました。<br>
+			<br>
+			応募者が<span class="workFontWeight">入力した情報をデータベースに格納し<br>
+			管理者ログイン画面で応募者データを閲覧できる</span>ようになっています。
+		</p>
+		<h3>セールスポイント</h3>
+		<ul class="worksul">
+		<li>多数の応募が想定されるためデータベースを構築しデータを格納できるようにしました。</li>
+		<li>応募者の個人情報を扱うため堅牢なServlet+JSPでEclipseを使用し開発しました。</li>
+		<li>監督からの要望によりフォームに応募者の顔写真画像アップロード機能をつけました。</li>
+		<li>応募者が募集サイトをスマホで見ることを想定しレスポンシブルデザインにしました。</li>
+		<li>GCEにターミナルからJava＆Tomcatの環境構築をしDBを作成し配置しました。</li>
+		</ul>
+		<h3>使用技術</h3>
+		<ul class="worksul">
+		<li>JavaServlet/JSP</li>
+		<li>MySQL</li>
+		<li>Unity</li>
+		<li>JavaScript</li>
+		<li>HTML5</li>
+		<li>CSS3</li>
+		</ul>
+		<h3>使用例</h3>
+		<ol class="example">
+			<li>申込フォームからをクリック</li>
+			<p class="examplefont">メニューからコース紹介のお申込フォームボタンをクリックします。</p>
+			<video src="images/workImage.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
+			<li>申込情報を入力し応募</li>
+			<p class="examplefont">
+				入力フォームに応募情報を入力します。確認ボタンを押し入力情報を確認したら送信ボタンを押します。
+				これでデータベースに応募情報が格納されました。
+			</p>
+			<video src="images/workImage2.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
+			<li>管理者ログイン画面から応募者閲覧画面へ</li>
+			<p class="examplefont">
+				IDとパスワードを入力しログインし応募者を閲覧できます。
+			</p>
+		<video src="images/workImage3.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
+		</ol>
+		<h3>改善点</h3>
+		<ol class="example">
+			<li>データベース検索機能</li>
+				<p class="examplefont">
+					今回は応募者のデータを全て取得し表示するだけになっています。
+					なのでデータベースに格納された応募者のデータを検索し表示する機能を追加したいと考えております。
+				</p>
+			<li>データベース編集機能</li>
+				<p class="examplefont">
+					応募者データに対して監督が管理画面でメモ書きやタグ付を出来る機能を追加したいと考えております。また、
+					書類選考で落選された応募者のデータを管理画面上で監督自身が削除できる機能も追加したいと考えております。
+				</p>
+			<li>メール送信機能</li>
+				<p class="examplefont">	
+					応募者が入力フォームで入力した情報が今回はデータベースに格納されるだけになっています。
+					なので入力情報をメールにも送信する機能も追加したいと考えております。
+				</p>
+		</ol>
+	</section>
+	<img src="../../images/backYellow.png" class="backImg">
+	</div>
+	<footer>
+		<p>&copy; 2021 Ryota Nomoto</p>
+	</footer>
+</body>
+</html>

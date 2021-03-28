@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#f7d14d;
+	margin:0;
+	padding:0;
+}
+::selection{
+	background:#f7d14d;
+	color:#fff;
+}
+#ham-menu {
+    background-color: #eee; 
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px 25px; 
+    position: fixed;
+    right: -270px; 
+    top: 0;
+    transition: transform 0.3s linear 0s; 
+    width: 270px; 
+	z-index: 100;
+	opacity:0.8;
+}
+#menu-background {
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.3s linear 0s; 
+    width: 100%;
+    z-index: -1;
+}
+
+#menu-icon {
+	display     : inline-block; 
+	transform   : scale(2.2, 1.9); 
+	color:#666;
+    border-radius: 0 0 0 10px; 
+    cursor: pointer;
+	font-size: 22px; 
+	font-weight: lighter;
+    height: 50px; 
+    line-height: 70px; 
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70px; 
+    transition: all 0.3s linear 0s; 
+    z-index: 100;
+}
+#menu-cl{
+	color:#666;
+    border-radius: 0 0 0 10px; 
+    cursor: pointer;
+	font-size: 52px; 
+	font-weight: lighter;
+    height: 50px; 
+    line-height: 70px; 
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70px; 
+    transition: all 0.3s linear 0s; 
+	z-index: 99;
+	opacity:0;
+}
+#menuBotan{
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	background-color:#555
+	transition: all 0.3s linear 0s; 
+	z-index: 100;
+	}
+#menu-cb {
+    display: none; 
+}
+
+#menu-cb:checked ~ #ham-menu,
+#menu-cb:checked ~ #menu-icon {
+    transform: translate(-170px); 
+}
+
+#menu-cb:checked ~ #menu-icon{
+		opacity:0;
+}
+
+#menu-cb:checked ~ #menu-cl{
+	  transform: translate(-170px);
+		opacity:1;
+}
+#menu-cb:checked ~ #menu-background {
+    opacity: 0.5;
+    z-index: 99;
+}
+
+
+ul,li,a,.cycle{
+	font-family:"Hiragino Kaku Gothic ProN",Mieryo,sans-serif;
+	color: #222;
+	font-size:15px;
+	letter-spacing:3px;
+	line-height:50px;
+}
+a{
+	display: block;
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+.topBtn{
+	text-decoration: none;
+	position:fixed;
+	top:35px;
+	left:45px;
+	font-size:11px;
+	font-family:sans-serif;
+	color:#777;
+	letter-spacing:1.2px;
+	line-height:17px;
+	text-align:left;
+	z-index:5;
+}
+.container{
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:100vw;
+	margin:auto;
+	background-color:white;
+	font-family: 'Alef', sans-serif;
+		overflow: hidden;
+}
+.topGray{
+	position:absolute;
+	margin-top:0;
+	left:0;
+	padding-top:0;
+	width:80vw;
+	z-index:3;
+	overflow: hidden;
+}
+.works{
+	background-color:white;
+	width:70vw;
+	display:flex;
+	flex-direction:column;
+	align-items:left;
+		overflow: hidden;
+}
+h1{
+	font-size:16px;
+	font-weight:400;
+	letter-spacing:3px;
+	margin-top:130px;
+	border-bottom: 1.5px solid #ccc;
+	text-align:left;
+	width:300px;
+}
+h2{
+	font-size:29px;
+	font-weight:300;
+	letter-spacing:2.5px;
+	margin-top:15px;
+	text-align:left;
+}
+.urlFontSize{
+	font-size:11px;
+	letter-spacing:1px;
+	margin-top:-8px;
+}
+.workGIF{
+	margin-top:30px;
+	margin-bottom:60px;
+	max-width:500px;
+	width:55vw;
+	overflow: hidden;
+}
+.workFont{
+	margin-top:30px;
+	margin-bottom:30px;
+	font-family: sans-serif;
+	font-size:15px;
+	font-weight:100;
+	line-height:28px;
+	color:#333;
+	width:600px;
+}
+.workFontWeight{
+	font-weight:600;
+}
+h3{
+	margin-top:50px;
+	font-size:23px;
+	font-weight:500;
+	font-family: sans-serif;
+	border-bottom: 1.5px solid #ccc;
+	padding-bottom:5px;
+}
+.worksul{
+	margin-top:30px;
+	margin-left:20px;
+	list-style: disc;
+}
+.worksul li{
+	letter-spacing:0px;
+	overflow: visible;
+	line-height:28px;
+}
+.skillul li{
+	letter-spacing:0px;
+	overflow: visible;
+	line-height:28px;
+}
+ol{
+	margin-left:38px;
+}
+.example li{
+	margin-top:30px;
+	font-size:19px;
+	font-weight:500;
+}
+.examplefont{
+	margin-top:10px;
+	margin-left:-35px;
+}
+.backImg{
+	margin-top:100px;
+	width:100vw;
+}
+footer{
+	width:100vw;
+	background-color:#f7d14d;
+	margin-top:-1px;
+	z-index:5;
+}
+footer>p{
+	padding-bottom:50px;
+	padding-left:8vw;
+	font-size:12px;
+	color:#333;
+}
