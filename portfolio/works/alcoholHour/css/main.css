@@ -113,6 +113,11 @@ a{
 	display: block;
 	text-decoration:none;
 }
+.linkPython{
+	display:inline-block;
+	text-decoration:underline;
+	line-height:0;
+}
 ul{
 	list-style:none;
 }
@@ -194,7 +199,8 @@ h2{
 	font-weight:100;
 	line-height:28px;
 	color:#333;
-	width:600px;
+	max-width:600px;
+	width:70vw;
 }
 .workFontWeight{
 	font-weight:600;

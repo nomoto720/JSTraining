@@ -194,7 +194,8 @@ h2{
 	font-weight:100;
 	line-height:28px;
 	color:#333;
-	width:600px;
+	max-width:600px;
+	width:70vw;
 }
 .workFontWeight{
 	font-weight:600;
@@ -249,4 +250,14 @@ footer>p{
 	padding-left:8vw;
 	font-size:12px;
 	color:#333;
+}
+
+
+code {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 13px;
+}
+.prettyprint ol.linenums > li {
+line-height:18px;
+list-style-type: decimal; 
 }

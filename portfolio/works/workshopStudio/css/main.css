@@ -139,7 +139,6 @@ ul{
 	margin:auto;
 	background-color:white;
 	font-family: 'Alef', sans-serif;
-	overflow: hidden;
 }
 .topGray{
 	position:absolute;
@@ -194,7 +193,8 @@ h2{
 	font-weight:100;
 	line-height:28px;
 	color:#333;
-	width:600px;
+	max-width:600px;
+	width:70vw;
 }
 .workFontWeight{
 	font-weight:600;

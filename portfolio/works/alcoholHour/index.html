@@ -29,19 +29,20 @@
 		<img src="../../images/works2.jpg" class="workGIF">
 		<h3>サービス概要</h3>
 		<p class="workFont">
-			映画監督が開催する役者志望の方のための演技ワークショップ応募サイトです。<br>
-			以前、制作したものをもとにダミーサイトを作りました。<br>
+			コロナの影響で気軽にバーに飲みに行けなくなったので<br>
+			バーの雰囲気のあるサイトを作りたくて制作しました。<br>
 			<br>
-			応募者が<span class="workFontWeight">入力した情報をデータベースに格納し<br>
-			管理者ログイン画面で応募者データを閲覧できる</span>ようになっています。
+			以前<a href="../alcoholCalc/index.html" class="linkPython">Pythonで制作した</a>アルコール度数計算機を<br>
+			Webサイト用にJava scriptで書き直しました。<br>
+			<span class="workFontWeight">Unityで2Dゲームを制作し、Servlet&JSPで<br>
+			データベースと接続しランキング表示</span>出来るようにしました。
 		</p>
 		<h3>セールスポイント</h3>
 		<ul class="worksul">
-		<li>多数の応募が想定されるためデータベースを構築しデータを格納できるようにしました。</li>
-		<li>応募者の個人情報を扱うため堅牢なServlet+JSPでEclipseを使用し開発しました。</li>
-		<li>監督からの要望によりフォームに応募者の顔写真画像アップロード機能をつけました。</li>
-		<li>応募者が募集サイトをスマホで見ることを想定しレスポンシブルデザインにしました。</li>
-		<li>GCEにターミナルからJava＆Tomcatの環境構築をしDBを作成し配置しました。</li>
+		<li>グラス、ボタンなど後からアニメーションをつけるためCSSで構築しました。</li>
+		<li>電飾、泡、波、テレビ画面などをCSS＆JavaScriptでアニメーションをつけました。</li>
+		<li>2Dゲームはアセットを使わずUnityで制作しました。</li>
+		<li>Servlet&JSPでDBにアクセスしJSONでかえしUnityでランキング表示する機能をつけました。</li>
 		</ul>
 		<h3>使用技術</h3>
 		<ul class="worksul">
@@ -54,37 +55,49 @@
 		</ul>
 		<h3>使用例</h3>
 		<ol class="example">
-			<li>申込フォームからをクリック</li>
-			<p class="examplefont">メニューからコース紹介のお申込フォームボタンをクリックします。</p>
-			<video src="images/workImage.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
-			<li>申込情報を入力し応募</li>
+			<li>コップをクリックし計算</li>
 			<p class="examplefont">
-				入力フォームに応募情報を入力します。確認ボタンを押し入力情報を確認したら送信ボタンを押します。
-				これでデータベースに応募情報が格納されました。
+				トップ画面から下にスクロールしコップをクリック。<br>
+				するとアルコール度数計算機が表示されます。<br>
+				数値を入力するとコップの液体の色が変化します。<br>
+				計算ボタンを押すとアルコール度数と水割りの量が表示されます。<br>
+				クリアを押し、コップを押すと計算機が非表示になります。
+			</p>
+			<video src="images/workImage.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
+			<li>ゲーム機をクリックしDrunk Game</li>
+			<p class="examplefont">
+				ゲーム機をクリックするとゲームのスタート画面が表示されます。<br>
+				画面にカーソルをあわせクリックするとゲームスタート<br>
+				矢印キーの←と→で移動して落下するお酒をゲットします<br>
+				制限時間が終わるとポイントとランキングが表示されます<br>
+				画面右上の×ボタンで画面を閉じます。
 			</p>
 			<video src="images/workImage2.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
-			<li>管理者ログイン画面から応募者閲覧画面へ</li>
+			<li>赤いボタンをクリックしBAC計算</li>
 			<p class="examplefont">
-				IDとパスワードを入力しログインし応募者を閲覧できます。
+				ページ下部にある赤いボタンをクリックすると映像が流れます<br>
+				エンドロール風に流れるアルコール血中濃度計算機です。<br>
+				数値を入力し計算ボタンを押すと計算結果が表示されます<br>
+				
 			</p>
 		<video src="images/workImage3.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
 		</ol>
 		<h3>改善点</h3>
 		<ol class="example">
-			<li>データベース検索機能</li>
+			<li>計算機改善</li>
 				<p class="examplefont">
-					今回は応募者のデータを全て取得し表示するだけになっています。
-					なのでデータベースに格納された応募者のデータを検索し表示する機能を追加したいと考えております。
-				</p>
-			<li>データベース編集機能</li>
+					コップをクリックして計算機が表示されたときに<br>
+					Java Scriptで画面を自動スクロールし<br>
+					計算機の表示が分かりやすいようにしたいです。
+			<li>2Dゲーム改善</li>
 				<p class="examplefont">
-					応募者データに対して監督が管理画面でメモ書きやタグ付を出来る機能を追加したいと考えております。また、
-					書類選考で落選された応募者のデータを管理画面上で監督自身が削除できる機能も追加したいと考えております。
+					BAC(アルコール血中濃度)の値が0.48%以上になると<br>
+					ゲームオーバーになるようにしたいです。
 				</p>
-			<li>メール送信機能</li>
+			<li>アルコール血中濃度計算機改善</li>
 				<p class="examplefont">	
-					応募者が入力フォームで入力した情報が今回はデータベースに格納されるだけになっています。
-					なので入力情報をメールにも送信する機能も追加したいと考えております。
+					値を入力するまでは文字を静止し判定ボタンをクリックしたら<br>
+					エンドロールが流れるようにしたいです。
 				</p>
 		</ol>
 	</section>
