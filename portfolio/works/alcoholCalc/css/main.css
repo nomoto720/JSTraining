@@ -149,6 +149,8 @@ ul{
 	width:80vw;
 	z-index:3;
 	overflow: hidden;
+	opacity:0.5;
+	pointer-events: none;
 }
 .works{
 	background-color:white;
@@ -182,8 +184,8 @@ h2{
 .workGIF{
 	margin-top:30px;
 	margin-bottom:60px;
-	max-width:500px;
-	width:55vw;
+	max-width:250px;
+	width:38vw;
 	overflow: hidden;
 }
 .workFont{
@@ -255,9 +257,24 @@ footer>p{
 
 code {
   font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 13px;
+	font-size: 13px;
+
 }
 .prettyprint ol.linenums > li {
-line-height:18px;
-list-style-type: decimal; 
+	line-height:18px;
+	list-style-type: decimal; 
+	color:#777;
+	border-left:solid 1px;
+	padding-left:1rem; 
+}
+pre{
+	margin-top:50px;
+
+	white-space: pre-wrap ;
+}
+.alcoholLink{
+	display:inline-block;
+	text-decoration:underline;
+	text-decoration-color: blue;
+	line-height:0;
 }

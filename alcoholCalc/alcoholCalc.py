@@ -80,4 +80,13 @@ label3=tk.Label(text='',font=("Arial",10,),bg='lemonchiffon')
 label3.pack(**s2)
 
 
+def fix():
+    a = root.winfo_geometry().split('+')[0]
+    b = a.split('x')
+    w = int(b[0])
+    h = int(b[1])
+    root.geometry('%dx%d' % (w+1,h+1))
+root.update()
+root.after(0, fix)
+
 root.mainloop()

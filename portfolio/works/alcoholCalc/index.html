@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>RYOTA NOMOTO WORKS</title>
 	<link href="css/main.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=py&skin=desert"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=py&skin=sunburst"></script>
 </head>
 <body>
 	<input id="menu-cb" type="checkbox" value="off">
@@ -27,14 +27,14 @@
 		<a href="../../index.html#works2"><h1>WORKS</h1></a>
 		<a><h2>アルコール度数計算機</h2></a>
 		<a><p class="urlFontSize">Alcohol Degree Calc</p></a>
-		<img src="../../images/works6.jpg" class="workGIF">
+		<video src="images/warkImg.mp4" class="workGIF" loop autoplay muted ></video>
 		<h3>サービス概要</h3>
 		<p class="workFont">
 			<br>
 			コロナでお酒を家で飲むことが多くなったので<br>
 			水割りのアルコール度数計算機を作成しました。<br>
 			<br>
-			<span class="workFontWeight">Pythonのtkinterを使い作成しました</span>
+			<span class="workFontWeight">Python</span>の<span class="workFontWeight">tkinter</span>を使い作成しました。
 		</p>
 		<h3>ソースコード</h3>
 		<pre  class="prettyprint linenums lang-py"><code>import tkinter as tk
@@ -126,38 +126,25 @@ root.mainloop()
 		<li>Python</li>
 		</ul>
 		<h3>使用例</h3>
-		<ol class="example">
-			<li>申込フォームからをクリック</li>
-			<p class="examplefont">メニューからコース紹介のお申込フォームボタンをクリックします。</p>
-			<video src="images/workImage.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
-			<li>申込情報を入力し応募</li>
-			<p class="examplefont">
-				入力フォームに応募情報を入力します。確認ボタンを押し入力情報を確認したら送信ボタンを押します。
-				これでデータベースに応募情報が格納されました。
-			</p>
-			<video src="images/workImage2.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
-			<li>管理者ログイン画面から応募者閲覧画面へ</li>
-			<p class="examplefont">
-				IDとパスワードを入力しログインし応募者を閲覧できます。
-			</p>
-		<video src="images/workImage3.mp4" class="workGIF" loop autoplay muted style="margin-left:-35px;"></video>
-		</ol>
+		<p class="workFont">
+			「お酒の量」「アルコール度数」「割るお水の量」を入力し「計算する」をクリック。<br>
+			クリアボタンを押して数値をリセットします。
+		</p>
+		<video src="images/warkImg.mp4" class="workGIF" loop autoplay muted ></video>
 		<h3>改善点</h3>
 		<ol class="example">
-			<li>データベース検索機能</li>
+			<li>水割りの量</li>
 				<p class="examplefont">
-					今回は応募者のデータを全て取得し表示するだけになっています。
-					なのでデータベースに格納された応募者のデータを検索し表示する機能を追加したいと考えております。
+					アルコールと水で割った後の量も表示できる機能を作りたいと考えております。
 				</p>
-			<li>データベース編集機能</li>
+			<li>保存機能</li>
 				<p class="examplefont">
-					応募者データに対して監督が管理画面でメモ書きやタグ付を出来る機能を追加したいと考えております。また、
-					書類選考で落選された応募者のデータを管理画面上で監督自身が削除できる機能も追加したいと考えております。
+					データベースと接続、割った水割りに名前をつけて保存できるようにしたいです。
 				</p>
-			<li>メール送信機能</li>
-				<p class="examplefont">	
-					応募者が入力フォームで入力した情報が今回はデータベースに格納されるだけになっています。
-					なので入力情報をメールにも送信する機能も追加したいと考えております。
+			<li>ウェブサービス</li>
+				<p class="examplefont">
+						<s>他の言語を使用しウェブで使えるアプリにしたいです。</s><br>
+						<a href="https://chita-hp.com/alcohol/" class="alcoholLink">こちら</a>から使えるようになりました。
 				</p>
 		</ol>
 	</section>

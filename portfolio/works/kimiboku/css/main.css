@@ -149,6 +149,8 @@ ul{
 	width:80vw;
 	z-index:3;
 	overflow: hidden;
+	opacity:0.5;
+	pointer-events: none;
 }
 .works{
 	background-color:white;
